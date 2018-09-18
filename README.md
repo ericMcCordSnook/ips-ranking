@@ -4,3 +4,6 @@ Implementation of Mallow's Weighted Kendall Model for computing distances betwee
 Nikhil Bhaip & Eric McCord-Snook
 
 Advised by Professor Farzad Farnoud Hassanzadeh
+
+University of Virginia
+School of Engineering and Applied Science
