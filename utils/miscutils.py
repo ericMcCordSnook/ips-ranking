@@ -1,4 +1,7 @@
+from rankobjects.weight import Arithmetic
+from rankobjects.ranking import Ranking
 import numpy as np
+from itertools import permutations
 
 # Read in the data from given file
 def read_csv(file, has_header=True):
