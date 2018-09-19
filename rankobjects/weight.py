@@ -44,10 +44,6 @@ class Arithmetic(Weight):
         return self.a-indices*self.b
 
     def calc_weight_sum(self, j, delt):
-        # weight_sum = 0
-        # for l in range(j, j+delt): # loops from l=j to l=j+delt-1
-        #     weight_sum += (self.a - l*self.b)
-        #return weight_sum
         return self.a*delt - self.b*delt*(j-0.5) - 0.5*self.b*delt*delt
 
 

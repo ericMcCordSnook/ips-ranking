@@ -1,4 +1,4 @@
-from rankobjects.weight import Arithmetic
+from rankobjects.weight import *
 from rankobjects.ranking import Ranking
 import numpy as np
 from itertools import permutations
@@ -21,6 +21,21 @@ def ranks_to_str(all_ranks):
     for i in range(num_rows):
         ranks_str[i] = "".join(all_ranks[i].astype(str))
     return ranks_str
+
+def generate_weighted_permutation_graph(NUM_RANKING_ELEMENTS, weight):
+    if not isinstance(weight, Weight):
+        raise TypeError("weight argument is not a Weight object")
+    IDENTITY_LIST = [i for i in range(1,NUM_RANKING_ELEMENTS+1)]
+    weights = weight.generate_weights_vect(NUM_RANKING_ELEMENTS)
+    perms = list(permutations(IDENTITY_LIST))
+    graph = {}
+    for perm in perms:
+        graph[perm] = {}
+        for i in range(NUM_RANKING_ELEMENTS-1):
+            perm_copy = list(perm)
+            perm_copy[i], perm_copy[i+1] = perm_copy[i+1],perm_copy[i]
+            graph[perm][tuple(perm_copy)] = weights[i]
+    return graph
 
 def generate_simulated_ranks(BASE_LIST, NUM_RANKING_ELEMENTS, WEIGHT_A, WEIGHT_B, NUM_SIM_RANKINGS, data_summary=False, ground_truth=None):
     weights = Arithmetic(WEIGHT_A, WEIGHT_B)
