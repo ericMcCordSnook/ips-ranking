@@ -7,6 +7,9 @@ from copy import deepcopy
 # heuristics object by doing getattr(HeuristicsClass, "Unimode_Greedy")
 
 class Unimode_Greedy:
+    def __init__(self):
+        print("New object created: Unimode_Greedy")
+
     def get_greedy_traversal_order(self, graph, start_node):
         order = [start_node]
         visited = set()
@@ -38,4 +41,4 @@ class Unimode_Greedy:
                 num_to_return = num
         else:
             num_to_return = int(ceil(pct * factorial(len(mode_ranking))))
-        return get_greedy_traversal_order(graph, mode_ranking)[:num_to_return]
+        return self.get_greedy_traversal_order(graph, mode_ranking)[:num_to_return]
