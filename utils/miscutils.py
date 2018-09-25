@@ -1,5 +1,5 @@
-from rankobjects.weight import *
-from rankobjects.ranking import Ranking
+from rankobjects.Weight import *
+from rankobjects.Ranking import Ranking
 import numpy as np
 from itertools import permutations
 

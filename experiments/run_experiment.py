@@ -1,3 +1,6 @@
+### AS OF NOW THIS FILE IS DEPRECATED SO DON'T USE IT
+
+
 from rankobjects.multiranking import MultiRanking
 from rankobjects.weight import Arithmetic
 from utils.miscutils import generate_simulated_ranks

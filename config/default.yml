@@ -1,2 +1,4 @@
-experiment: experiments.Unimode_Greedy_Experiment
+algorithm: algorithms.Conventional
 heuristic: heuristics.Unimode_Greedy
+weight: Arithmetic
+data: input.txt

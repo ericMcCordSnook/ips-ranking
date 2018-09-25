@@ -1,6 +1,6 @@
 import sys
-from configure_experiment import configure_experiment
+from create_experiment import create_experiment
 
 if __name__ == '__main__':
-    experiment = configure_experiment(sys.argv[1])
+    experiment = create_experiment(sys.argv[1])
     experiment.run()

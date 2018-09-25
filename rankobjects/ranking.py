@@ -1,4 +1,4 @@
-from .weight import Weight
+from rankobjects.Weight import Weight
 import numpy as np
 from math import exp, log
 

@@ -1,4 +1,4 @@
-from rankobjects.weight import *
+from rankobjects.Weight import *
 from utils.miscutils import generate_weighted_permutation_graph
 # from heuristics.Unimode_Greedy import get_greedy_traversal_order, get_perms_to_explore
 from heuristics import Unimode_Greedy

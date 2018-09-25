@@ -1,5 +1,5 @@
-from .ranking import Ranking
-from .weight import Weight
+from rankobjects.Ranking import Ranking
+from rankobjects.Weight import Weight
 import numpy as np
 from math import exp, log
 
