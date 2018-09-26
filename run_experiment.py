@@ -1,3 +1,4 @@
+import sys
 import yaml
 from experiments import Generic_Experiment
 
@@ -6,11 +7,7 @@ def yaml_load(fp):
         config_data = yaml.load(fd)
     return config_data
 
-def yaml_dump(fp, config_data):
-    with open(fp, "w") as fd:
-        yaml.dump(data, fd)
-
-def create_experiment(fp):
-    config_data = yaml_load(fp)
+if __name__ == '__main__':
+    config_data = yaml_load(sys.argv[1])
     experiment = Generic_Experiment(config_data)
-    return experiment
+    experiment.run()
