@@ -1,6 +1,7 @@
 from rankobjects import *
 from algorithms import *
 from heuristics import *
+from utils import *
 from importlib import import_module
 
 class Generic_Experiment:
@@ -8,6 +9,7 @@ class Generic_Experiment:
         print("New object created: Generic_Experiment")
         print(config_data)
         self.config_data = config_data
+        self.logger = Logger("output/out1.log", )
         self.algorithm = None
         self.heuristic = None
         self.weight = None
@@ -31,6 +33,7 @@ class Generic_Experiment:
             if attribute in self.config_data:
                 attr_obj = self.get_class(self.config_data[attribute])()
                 setattr(self, attribute, attr_obj)
+
 
     # THESE FUNCTIONS MAY NOT BELONG HERE BUT THEY NEED TO BE DONE NONETHELESS
 

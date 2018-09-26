@@ -1,5 +1,5 @@
 from rankobjects.MultiRanking import MultiRanking
-from numpy import np
+import numpy as np
 
 class Alt_Grad_Ascent:
     def __init__(self):

@@ -1,5 +1,5 @@
 from rankobjects.MultiRanking import MultiRanking
-from numpy import np
+import numpy as np
 
 class Backtrack_Line:
     def __init__(self):
