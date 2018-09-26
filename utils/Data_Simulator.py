@@ -20,7 +20,7 @@ class Data_Simulator:
         all_rankings_data = self.generate_simulated_data()
         np.savetxt(self.filepath, all_rankings_data.astype(int), fmt='%i,%i,%i,%i', delimiter='\n')
 
-    def generate_simulated_data(self, data_summary=False):
+    def generate_simulated_data(self, data_summary=True):
         all_rankings_data = np.array([])
         BASE_LIST = [i for i in range(1, self.num_elements+1)]
         perms = list(permutations(BASE_LIST))
@@ -45,6 +45,6 @@ class Data_Simulator:
             counts = uniques[1]
             for i in range(len(unique_ranks)):
                 unique_rank_str = " ".join(unique_ranks[i].astype(str))
-                logger.info("Permutation: " + unique_rank_str + "\t" + " Count: "  + str(counts[i]))
+                self.logger.info("Permutation: " + unique_rank_str + "\t" + " Count: "  + str(counts[i]))
 
         return all_rankings_data
