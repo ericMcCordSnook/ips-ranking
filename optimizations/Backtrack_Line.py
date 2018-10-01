@@ -7,7 +7,7 @@ class Backtrack_Line:
 
     # TODO: modularize all this code and optimize
 
-    # Extends alternating gradient descent and uses backtracking algorithm to find the best learning rate
+    # Extends alternating gradient descent and uses backtracking optimization to find the best learning rate
     def backtrack_line(data, num_iter=100, tolerance=0.0005, ground_truth=None,
         plot_grads=True, bounds=True, b_start=None, phi_start=None, unweighted=False):
         num_elements = data[0].shape[0]

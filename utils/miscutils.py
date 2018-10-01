@@ -9,8 +9,7 @@ def read_csv(file, has_header=True):
     return data
 
 # Gets data from CSV file and converts it appropriately
-def get_data(dataset, folder="../datasets/"):
-    data_file = folder+dataset+".csv"
+def get_data(data_file):
     return read_csv(data_file).astype(int)
 
 # Convert list of ranks to concatenated string versions

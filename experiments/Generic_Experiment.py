@@ -1,7 +1,8 @@
 from rankobjects import *
-from algorithms import *
+from optimizations import *
 from heuristics import *
 from utils import *
+from utils.miscutils import get_data
 from importlib import import_module
 
 class Generic_Experiment:
@@ -10,7 +11,7 @@ class Generic_Experiment:
         print(config_data)
         self.config_data = config_data
         self.logger = Logger("output/out1.log", )
-        self.algorithm = None
+        self.optimization = None
         self.heuristic = None
         self.weight = None
         self.data = None
@@ -28,27 +29,24 @@ class Generic_Experiment:
 
     def configure_experiment(self):
         print("Experiment configuring!")
-        attributes = ["algorithm", "heuristic", "weight"]
+        attributes = ["optimization", "heuristic", "weight"]
         for attribute in attributes:
             if attribute in self.config_data:
                 attr_obj = self.get_class(self.config_data[attribute])()
                 setattr(self, attribute, attr_obj)
-
-
-    # THESE FUNCTIONS MAY NOT BELONG HERE BUT THEY NEED TO BE DONE NONETHELESS
-
-    def create_weight_obj(self):
-        pass
-
-    def read_data_file(self):
-        pass
-
-    def generate_simulated_data(self):
-        pass
+        self.data = get_data(self.config_data["data_file"])
+        self.optimization.data = self.data
+        self.optimization.weight = self.weight
+        self.heuristic.num_elements = self.data.shape[1]
+        self.heuristic.optimization = self.optimization
+        self.heuristic.optimization_params = self.config_data['optimization_params']
+        self.heuristic.weight = self.weight
+        self.heuristic.set_params(self.config_data['heuristic_params'])
 
     def output_results(self, format):
         pass
 
     def run(self):
-        # do stuff
+        results = self.heuristic.run_heuristic()
+        print("results: \n", results)
         print("Generic_Experiment ran!")

@@ -4,4 +4,4 @@ weight_type: Arithmetic
 weight_a: 1.0
 weight_b: 0.2
 ground_truth: "1234"
-filepath: "data/simulated/sim0.txt"
+filepath: "data/simulated/sim0.csv"

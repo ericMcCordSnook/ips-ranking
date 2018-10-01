@@ -5,7 +5,7 @@ class Alt_Grad_Ascent:
     def __init__(self):
         print("Alt_Grad_Ascent object created")
 
-    # Utilizes alternating optimization algorithm to find max
+    # Utilizes alternating optimization optimization to find max
     def alt_grad_ascent(data, num_iter=100, alpha=0.001, tolerance=0.00001,
         ground_truth=None, plot_grads=True, bounds=True, max_step_ratio=0.5, b_start=None, phi_start=None):
         num_elements = data[0].shape[0]

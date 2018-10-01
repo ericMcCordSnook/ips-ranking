@@ -1,6 +1,6 @@
 Experiments we want to run:
   1. write code for first heuristic (exploring near the mode)
-  2. compare results with the different algorithms we have now
+  2. compare results with the different optimizations we have now
 
 
 9/20 Notes

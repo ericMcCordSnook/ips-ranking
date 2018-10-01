@@ -105,8 +105,8 @@ class Ranking:
     def calc_marginal_weight_sum(self):
 
         marg_weight_sum_vect = np.zeros(self.num_elements)
-        a = self.weight.get_a()
-        b = self.weight.get_b()
+        a = self.weight.a
+        b = self.weight.b
         for j in range(self.num_elements): # loop through all j's
             z_j = 0.0
 

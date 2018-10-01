@@ -18,7 +18,9 @@ class Data_Simulator:
 
     def simulate(self):
         all_rankings_data = self.generate_simulated_data()
-        np.savetxt(self.filepath, all_rankings_data.astype(int), fmt='%i,%i,%i,%i', delimiter='\n')
+        header_str = 'x,' * (self.num_elements-1) + 'x'
+        fmt_str = '%i,' * (self.num_elements-1) + '%i'
+        np.savetxt(self.filepath, all_rankings_data.astype(int), header=header_str, fmt=fmt_str, delimiter='\n')
 
     def generate_simulated_data(self, data_summary=True):
         all_rankings_data = np.array([])
