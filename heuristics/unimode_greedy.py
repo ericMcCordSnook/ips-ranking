@@ -2,14 +2,64 @@ from utils.miscutils import generate_weighted_permutation_graph
 from math import ceil, factorial
 import sys
 from copy import deepcopy
-
-# Try making a class that has all the heuristics objects then create generic
-# heuristics object by doing getattr(HeuristicsClass, "Unimode_Greedy")
+import numpy as np
 
 class Unimode_Greedy:
     def __init__(self):
-        print("New object created: Unimode_Greedy")
+        super().__init__()
+        self.mode = None # will be the starting node
 
+    def set_params(self, params):
+        self.mode = params["mode"]
+
+    def get_neighbors(self, perm):
+        neighbors = np.empty((len(perm)-1, len(perm)))
+        for i in range(len(perm)-1):
+            perm_cpy = deepcopy(perm)
+            perm_cpy[i], perm_cpy[i+1] = perm_cpy[i+1], perm_cpy[i]
+            neighbors[i] = perm_cpy
+        return neighbors
+
+    def run_heuristic(self):
+        ground_truth = np.array(list(self.mode), dtype=int)
+        results = []
+        visited = set()
+        self.optimization_params["ground_truth"] = ground_truth
+        self.optimization.set_params(self.optimization_params)
+        result = self.optimization.optimize() # returns best_b, best_phi, max_log_like
+        results.append((ground_truth, result))
+        max_log_like = result[2]
+        visited.add(np.array_str(ground_truth))
+        while True:
+            neighbors = self.get_neighbors(ground_truth)
+            cur_results = [] # list of results for each neighbor
+            new_neighbors = 0
+            for i, neighbor in enumerate(neighbors):
+                if np.array_str(neighbor) not in visited:
+                    new_neighbors += 1
+                    visited.add(np.array_str(neighbor))
+                    self.optimization_params["ground_truth"] = neighbor
+                    self.optimization.set_params(self.optimization_params)
+                    cur_results.append((neighbor, self.optimization.optimize()))
+            if new_neighbors == 0:
+                break
+            cur_results.sort(key= lambda x: x[1][2]) # sorts by ascending log-likelihood
+            best_neighbor_log_like = cur_results[-1][1][2]
+            if best_neighbor_log_like > max_log_like:
+                max_log_like = best_neighbor_log_like
+                results.append(cur_results[-1])
+                ground_truth = cur_results[-1][0]
+            else:
+                break
+        return results
+
+
+
+
+
+
+    # THE METHODS BELOW ARE FLAWED AS THEY ASSUMED THAT THE B AND PHI WERE ALWAYS THE SAME
+    ## DEPRECATED
     def get_greedy_traversal_order(self, graph, start_node):
         order = [start_node]
         visited = set()

@@ -1,0 +1,12 @@
+# Sample configuration file for experiments
+
+# These are the values used in analyzing the data
+optimization: optimizations.Exhaustive_Search
+optimization_params: { "granularity": 5 }
+
+heuristic: heuristics.Unimode_Greedy
+heuristic_params: {"mode": "2134"}
+
+weight: rankobjects.Arithmetic
+
+data_file: "data/simulated/sim0.csv"

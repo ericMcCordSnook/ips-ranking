@@ -43,4 +43,4 @@ class Exhaustive_Search(Generic_Optimization):
         # print("best b:", best_b)
         # print("best log-like:", max_log_like)
 
-        return best_phi, best_b, max_log_like
+        return (best_phi, best_b, max_log_like)
