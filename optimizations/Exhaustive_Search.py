@@ -39,8 +39,6 @@ class Exhaustive_Search(Generic_Optimization):
         best_b = b_vect[max_index_b]
         max_log_like = log_likes[max_index_phi][max_index_b]
 
-        # print("best phi:", best_phi)
-        # print("best b:", best_b)
-        # print("best log-like:", max_log_like)
+        print("Optimal (phi, b, log_like) = (%f, %f, %f) \n" % (best_phi, best_b, max_log_like))
 
         return (best_phi, best_b, max_log_like)

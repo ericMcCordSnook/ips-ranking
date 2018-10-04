@@ -14,3 +14,7 @@ Experiments we want to run:
   This will tell us if the landscape is smooth or not, which lets us know how important
   the starting point is.
 - Research ranking combinatorial optimization.
+
+10/4
+- Look into why b = 0 always
+- Make it so unimode greedy doesn't move only on strict greater than

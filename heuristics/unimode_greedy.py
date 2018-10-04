@@ -41,20 +41,21 @@ class Unimode_Greedy(Generic_Heuristic):
                     visited.add(np.array_str(neighbor))
                     self.optimization_params["ground_truth"] = neighbor
                     self.optimization.set_params(self.optimization_params)
-                    cur_results.append((neighbor, self.optimization.optimize()))
+                    cur_results.append((neighbor, i, self.optimization.optimize()))
             if new_neighbors == 0:
                 break
-            cur_results.sort(key= lambda x: x[1][2]) # sorts by ascending log-likelihood
-            best_neighbor_log_like = cur_results[-1][1][2]
-            if best_neighbor_log_like > max_log_like:
+            # sort by ascending log-likelihood, descending index of swap
+            cur_results.sort(key= lambda x: (x[2][2], -1*x[1]))
+            # last element was the best choice
+            best_neighbor_log_like = cur_results[-1][2][2]
+            if best_neighbor_log_like >= max_log_like:
                 max_log_like = best_neighbor_log_like
-                results.append(cur_results[-1])
+                results.append((cur_results[-1][0], cur_results[-1][2]))
                 ground_truth = cur_results[-1][0]
             else:
                 break
         print("Attempted %d possible ground truths" % len(visited))
         return results
-
 
 
 
