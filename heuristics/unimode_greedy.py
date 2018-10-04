@@ -1,10 +1,11 @@
+from heuristics.Generic_Heuristic import Generic_Heuristic
 from utils.miscutils import generate_weighted_permutation_graph
 from math import ceil, factorial
 import sys
 from copy import deepcopy
 import numpy as np
 
-class Unimode_Greedy:
+class Unimode_Greedy(Generic_Heuristic):
     def __init__(self):
         super().__init__()
         self.mode = None # will be the starting node
@@ -21,7 +22,7 @@ class Unimode_Greedy:
         return neighbors
 
     def run_heuristic(self):
-        ground_truth = np.array(list(self.mode), dtype=int)
+        ground_truth = np.array(list(self.mode), dtype=float)
         results = []
         visited = set()
         self.optimization_params["ground_truth"] = ground_truth
@@ -51,6 +52,7 @@ class Unimode_Greedy:
                 ground_truth = cur_results[-1][0]
             else:
                 break
+        print("Attempted %d possible ground truths" % len(visited))
         return results
 
 

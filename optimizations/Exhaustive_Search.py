@@ -1,7 +1,6 @@
 from optimizations.Generic_Optimization import Generic_Optimization
 from rankobjects.MultiRanking import MultiRanking
 import numpy as np
-from tqdm import tqdm
 
 class Exhaustive_Search(Generic_Optimization):
     def __init__(self):
@@ -16,6 +15,7 @@ class Exhaustive_Search(Generic_Optimization):
     # Returns this b and its corresponding log-like
     # Assumes arithmetic weights with a = 1.
     def optimize(self):
+        print("Optimizing parameters for ground_truth: ", self.ground_truth)
         num_elements = len(self.ground_truth)
 
         WEIGHT_A = 1.0
@@ -29,8 +29,8 @@ class Exhaustive_Search(Generic_Optimization):
 
         log_likes = np.zeros((self.granularity, self.granularity))
 
-        for i, phi in tqdm(enumerate(phi_vect)):
-            for j, b in tqdm(enumerate(b_vect)):
+        for i, phi in enumerate(phi_vect):
+            for j, b in enumerate(b_vect):
                 multi_rank_obj = MultiRanking(self.data, self.weight, self.ground_truth, phi=phi)
                 log_likes[i,j] = multi_rank_obj.log_likelihood()
 

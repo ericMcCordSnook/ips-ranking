@@ -1,5 +1,6 @@
 import sys
 import yaml
+import time
 from experiments import Generic_Experiment
 
 def yaml_load(fp):
@@ -10,4 +11,7 @@ def yaml_load(fp):
 if __name__ == '__main__':
     config_data = yaml_load(sys.argv[1])
     experiment = Generic_Experiment(config_data)
+    start_time = time.time()
     experiment.run()
+    end_time = time.time()
+    print("--- %s seconds ---" % (end_time - start_time))
