@@ -1,13 +1,13 @@
 Experiments we want to run:
-  1. write code for first heuristic (exploring near the mode)
-  2. compare results with the different optimizations we have now
+  1. write code for first heuristic (exploring near the mode) -- DONE
+  2. compare results with the different optimizations we have now -- DONE
 
 
 9/20 Notes
 - Find rank aggregation for non-weighted version and use that as a starting point
 - Start at the various modes we have and optimize the weights for these, then
   explore the neighbors and optimize the weights for them, compare the log-likelihoods
-  and move in the direction of best ranking (highest log-likelihood)
+  and move in the direction of best ranking (highest log-likelihood) -- DONE
 - Moving between modes is something also worth trying (my suggestion)
 - Run experiment where we start at different places (could be random) and do the naive
   way of moving between one node and another, and see if they converge to the same point.
@@ -17,4 +17,4 @@ Experiments we want to run:
 
 10/4
 - Look into why b = 0 always
-- Make it so unimode greedy doesn't move only on strict greater than
+- Make it so unimode greedy doesn't move only on strict greater than -- DONE

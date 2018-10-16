@@ -1,0 +1,7 @@
+num_elements: 3
+num_rankings: 1000
+weight_type: Arithmetic
+weight_a: 1.0
+weight_b: 0.2
+ground_truth: "123"
+filepath: "data/simulated/sim_3.csv"

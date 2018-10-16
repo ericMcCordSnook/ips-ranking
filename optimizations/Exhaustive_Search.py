@@ -31,6 +31,7 @@ class Exhaustive_Search(Generic_Optimization):
 
         for i, phi in enumerate(phi_vect):
             for j, b in enumerate(b_vect):
+                self.weight.b = b
                 multi_rank_obj = MultiRanking(self.data, self.weight, self.ground_truth, phi=phi)
                 log_likes[i,j] = multi_rank_obj.log_likelihood()
 
