@@ -16,5 +16,5 @@ Experiments we want to run:
 - Research ranking combinatorial optimization.
 
 10/4
-- Look into why b = 0 always
+- Look into why b = 0 always -- DONE
 - Make it so unimode greedy doesn't move only on strict greater than -- DONE

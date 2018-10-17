@@ -4,8 +4,8 @@
 optimization: optimizations.Exhaustive_Search
 optimization_params: { "granularity": 10 }
 
-heuristic: heuristics.Unimode_Greedy
-heuristic_params: {"mode": "2143"}
+heuristic: heuristics.Single_Start_Greedy
+heuristic_params: {"start": "2143"}
 
 weight: rankobjects.Arithmetic
 

@@ -20,5 +20,5 @@ class Generic_Heuristic:
         pass
 
     @abstractmethod
-    def run_heuristic(self):
+    def run_heuristic(self, params):
         pass

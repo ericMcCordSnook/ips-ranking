@@ -35,3 +35,14 @@ def generate_weighted_permutation_graph(NUM_RANKING_ELEMENTS, weight):
             perm_copy[i], perm_copy[i+1] = perm_copy[i+1],perm_copy[i]
             graph[perm][tuple(perm_copy)] = weights[i]
     return graph
+
+# Print frequency distribution of dataset
+def get_frequency_distribution(dataset):
+    uniques = np.unique(dataset, axis=0, return_counts=True)
+    unique_ranks = uniques[0].astype(int)
+    counts = uniques[1]
+    frequency_dict = {}
+    for i in range(len(unique_ranks)):
+        unique_rank_str = "".join(unique_ranks[i].astype(str))
+        frequency_dict[unique_rank_str] = counts[i]
+    return frequency_dict

@@ -2,7 +2,7 @@ from rankobjects import *
 from optimizations import *
 from heuristics import *
 from utils import *
-from utils.miscutils import get_data
+from utils.miscutils import get_data, get_frequency_distribution
 from importlib import import_module
 
 class Generic_Experiment:
@@ -47,6 +47,6 @@ class Generic_Experiment:
         pass
 
     def run(self):
-        results = self.heuristic.run_heuristic()
+        results = self.heuristic.run_heuristic({})
         print("results: \n", results)
         print("Generic_Experiment ran!")

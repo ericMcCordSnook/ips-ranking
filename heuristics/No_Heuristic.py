@@ -10,7 +10,7 @@ class No_Heuristic(Generic_Heuristic):
     def set_params(self, params):
         pass # there are no params to set
 
-    def run_heuristic(self):
+    def run_heuristic(self, params):
         ground_truths = list(permutations([i for i in range(1, self.num_elements+1)]))
         # array containing best_phi, best_b, max_log_like for each ground_truth
         results = np.empty((len(ground_truths), 3))
