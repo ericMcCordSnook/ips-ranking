@@ -5,8 +5,8 @@ optimization: optimizations.Exhaustive_Search
 optimization_params: { "granularity": 10 }
 
 heuristic: heuristics.Single_Start_Greedy
-heuristic_params: {"start": "2143"}
+heuristic_params: {"start": "1234"}
 
 weight: rankobjects.Arithmetic
 
-data_file: "data/simulated/sim_4.csv"
+data_file: "data/simulated/sim_4d.csv"
