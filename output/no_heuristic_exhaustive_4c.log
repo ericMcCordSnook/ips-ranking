@@ -1,0 +1,83 @@
+2018-10-18 01:16:31.629342
+
+Experiment Configuration 
+ {'optimization': 'optimizations.Exhaustive_Search', 'optimization_params': {'granularity': 10}, 'heuristic': 'heuristics.No_Heuristic', 'heuristic_params': {}, 'weight': 'rankobjects.Arithmetic', 'data_file': 'data/simulated/sim_4c.csv'} 
+
+Optimizing parameters for ground_truth: [1 2 3 4]
+Optimal (phi, b, log_like) = (0.888889, 0.111111, -2599.436119) 
+
+Optimizing parameters for ground_truth: [1 2 4 3]
+Optimal (phi, b, log_like) = (1.333333, 0.500000, -2706.342136) 
+
+Optimizing parameters for ground_truth: [1 3 2 4]
+Optimal (phi, b, log_like) = (0.888889, 0.277778, -2847.904678) 
+
+Optimizing parameters for ground_truth: [1 3 4 2]
+Optimal (phi, b, log_like) = (1.111111, 0.500000, -2898.270603) 
+
+Optimizing parameters for ground_truth: [1 4 2 3]
+Optimal (phi, b, log_like) = (0.888889, 0.500000, -2957.061093) 
+
+Optimizing parameters for ground_truth: [1 4 3 2]
+Optimal (phi, b, log_like) = (0.888889, 0.500000, -2957.061093) 
+
+Optimizing parameters for ground_truth: [2 1 3 4]
+Optimal (phi, b, log_like) = (0.444444, 0.000000, -2920.389486) 
+
+Optimizing parameters for ground_truth: [2 1 4 3]
+Optimal (phi, b, log_like) = (0.444444, 0.111111, -3062.528715) 
+
+Optimizing parameters for ground_truth: [2 3 1 4]
+Optimal (phi, b, log_like) = (0.222222, 0.000000, -3137.258608) 
+
+Optimizing parameters for ground_truth: [2 3 4 1]
+Optimal (phi, b, log_like) = (0.000000, 0.000000, -3178.053830) 
+
+Optimizing parameters for ground_truth: [2 4 1 3]
+Optimal (phi, b, log_like) = (0.000000, 0.000000, -3178.053830) 
+
+Optimizing parameters for ground_truth: [2 4 3 1]
+Optimal (phi, b, log_like) = (0.000000, 0.000000, -3178.053830) 
+
+Optimizing parameters for ground_truth: [3 1 2 4]
+Optimal (phi, b, log_like) = (0.222222, 0.000000, -3112.369719) 
+
+Optimizing parameters for ground_truth: [3 1 4 2]
+Optimal (phi, b, log_like) = (0.000000, 0.000000, -3178.053830) 
+
+Optimizing parameters for ground_truth: [3 2 1 4]
+Optimal (phi, b, log_like) = (0.000000, 0.000000, -3178.053830) 
+
+Optimizing parameters for ground_truth: [3 2 4 1]
+Optimal (phi, b, log_like) = (0.000000, 0.000000, -3178.053830) 
+
+Optimizing parameters for ground_truth: [3 4 1 2]
+Optimal (phi, b, log_like) = (0.000000, 0.000000, -3178.053830) 
+
+Optimizing parameters for ground_truth: [3 4 2 1]
+Optimal (phi, b, log_like) = (0.000000, 0.000000, -3178.053830) 
+
+Optimizing parameters for ground_truth: [4 1 2 3]
+Optimal (phi, b, log_like) = (0.000000, 0.000000, -3178.053830) 
+
+Optimizing parameters for ground_truth: [4 1 3 2]
+Optimal (phi, b, log_like) = (0.000000, 0.000000, -3178.053830) 
+
+Optimizing parameters for ground_truth: [4 2 1 3]
+Optimal (phi, b, log_like) = (0.000000, 0.000000, -3178.053830) 
+
+Optimizing parameters for ground_truth: [4 2 3 1]
+Optimal (phi, b, log_like) = (0.000000, 0.000000, -3178.053830) 
+
+Optimizing parameters for ground_truth: [4 3 1 2]
+Optimal (phi, b, log_like) = (0.000000, 0.000000, -3178.053830) 
+
+Optimizing parameters for ground_truth: [4 3 2 1]
+Optimal (phi, b, log_like) = (0.000000, 0.000000, -3178.053830) 
+
+Path to ground truth:
+0.8888888888888888
+0.1111111111111111
+-2599.436119443115
+
+--- 229.08263850212097 seconds ---

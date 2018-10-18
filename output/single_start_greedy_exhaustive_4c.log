@@ -1,0 +1,28 @@
+2018-10-18 01:01:02.861624
+
+Experiment Configuration 
+ {'optimization': 'optimizations.Exhaustive_Search', 'optimization_params': {'granularity': 10}, 'heuristic': 'heuristics.Single_Start_Greedy', 'heuristic_params': {'start': '1234'}, 'weight': 'rankobjects.Arithmetic', 'data_file': 'data/simulated/sim_4c.csv'} 
+
+Optimizing parameters for ground_truth: [1. 2. 3. 4.]
+Optimal (phi, b, log_like) = (0.888889, 0.111111, -2599.436119) 
+
+Optimizing parameters for ground_truth: [2. 1. 3. 4.]
+Optimal (phi, b, log_like) = (0.444444, 0.000000, -2920.389486) 
+
+Optimizing parameters for ground_truth: [1. 3. 2. 4.]
+Optimal (phi, b, log_like) = (0.888889, 0.277778, -2847.904678) 
+
+Optimizing parameters for ground_truth: [1. 2. 4. 3.]
+Optimal (phi, b, log_like) = (1.333333, 0.500000, -2706.342136) 
+
+Attempted 4 possible ground truths
+Path to ground truth:
+('[1. 2. 3. 4.]', (0.8888888888888888, 0.1111111111111111, -2599.436119443115))
+
+List of computed values:
+('[1. 2. 3. 4.]', (0.8888888888888888, 0.1111111111111111, -2599.436119443115))
+('[2. 1. 3. 4.]', (0.4444444444444444, 0.0, -2920.38948630865))
+('[1. 3. 2. 4.]', (0.8888888888888888, 0.2777777777777778, -2847.9046777288795))
+('[1. 2. 4. 3.]', (1.3333333333333333, 0.5, -2706.3421361672404))
+
+--- 40.73008441925049 seconds ---
