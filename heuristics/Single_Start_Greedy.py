@@ -3,6 +3,7 @@ from math import ceil, factorial
 import sys
 from copy import deepcopy
 import numpy as np
+import logging
 
 class Single_Start_Greedy(Generic_Heuristic):
     def __init__(self):
@@ -31,7 +32,7 @@ class Single_Start_Greedy(Generic_Heuristic):
         self.optimization_params["ground_truth"] = ground_truth
         self.optimization.set_params(self.optimization_params)
         result = self.optimization.optimize() # returns best_b, best_phi, max_log_like
-        single_path_results.append((ground_truth, result))
+        single_path_results.append((np.array_str(ground_truth), result))
         max_log_like = result[2]
         newly_visited.add(np.array_str(ground_truth))
         precomputed[np.array_str(ground_truth)] = result
@@ -59,9 +60,10 @@ class Single_Start_Greedy(Generic_Heuristic):
             best_neighbor_log_like = neighbor_results[-1][2][2]
             if best_neighbor_log_like >= max_log_like:
                 max_log_like = best_neighbor_log_like
-                single_path_results.append((neighbor_results[-1][0], neighbor_results[-1][2]))
+                single_path_results.append((np.array_str(neighbor_results[-1][0]), neighbor_results[-1][2]))
                 ground_truth = neighbor_results[-1][0]
             else:
                 break
-        print("Attempted %d possible ground truths" % len(newly_visited))
+        logging.info("Attempted %d possible ground truths" % len(newly_visited))
+        # print("Attempted %d possible ground truths" % len(newly_visited))
         return single_path_results, precomputed

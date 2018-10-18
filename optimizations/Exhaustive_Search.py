@@ -1,6 +1,7 @@
 from optimizations.Generic_Optimization import Generic_Optimization
 from rankobjects.MultiRanking import MultiRanking
 import numpy as np
+import logging
 
 class Exhaustive_Search(Generic_Optimization):
     def __init__(self):
@@ -16,6 +17,7 @@ class Exhaustive_Search(Generic_Optimization):
     # Assumes arithmetic weights with a = 1.
     def optimize(self):
         print("Optimizing parameters for ground_truth: ", self.ground_truth)
+        logging.info("Optimizing parameters for ground_truth: %s" % self.ground_truth)
         num_elements = len(self.ground_truth)
 
         WEIGHT_A = 1.0
@@ -41,5 +43,5 @@ class Exhaustive_Search(Generic_Optimization):
         max_log_like = log_likes[max_index_phi][max_index_b]
 
         print("Optimal (phi, b, log_like) = (%f, %f, %f) \n" % (best_phi, best_b, max_log_like))
-
+        logging.info("Optimal (phi, b, log_like) = (%f, %f, %f) \n" % (best_phi, best_b, max_log_like))
         return (best_phi, best_b, max_log_like)

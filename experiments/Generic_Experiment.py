@@ -4,13 +4,14 @@ from heuristics import *
 from utils import *
 from utils.miscutils import get_data, get_frequency_distribution
 from importlib import import_module
+import logging
 
 class Generic_Experiment:
     def __init__(self, config_data):
-        print("New object created: Generic_Experiment")
+        # print("New object created: Generic_Experiment")
         print(config_data)
+        logging.info("Experiment Configuration \n %s \n" % config_data)
         self.config_data = config_data
-        self.logger = Logger("output/out1.log", )
         self.optimization = None
         self.heuristic = None
         self.weight = None
@@ -28,7 +29,7 @@ class Generic_Experiment:
             raise e
 
     def configure_experiment(self):
-        print("Experiment configuring!")
+        # print("Experiment configuring!")
         attributes = ["optimization", "heuristic", "weight"]
         for attribute in attributes:
             if attribute in self.config_data:
@@ -48,5 +49,24 @@ class Generic_Experiment:
 
     def run(self):
         results = self.heuristic.run_heuristic({})
-        print("results: \n", results)
-        print("Generic_Experiment ran!")
+        
+
+        path_results = results[0]
+        logging.info("Path to ground truth:")
+        print("Path to ground truth:")
+        for path_result in path_results:
+            print(path_result)
+            logging.info("%s" % str(path_result))
+
+        if len(results)==2:
+            precomputed_results = results[1]
+            logging.info("\nList of computed values:")
+            print("\nList of computed values:")
+
+            for precomputed_result in precomputed_results.items():
+                print(precomputed_result)
+                logging.info("%s" % str(precomputed_result))
+
+
+        
+
