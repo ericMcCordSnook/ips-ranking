@@ -1,5 +1,4 @@
 from rankobjects import *
-from utils import Logger
 import numpy as np
 from itertools import permutations
 
@@ -14,7 +13,6 @@ class Data_Simulator:
         self.weight = weight_types[data["weight_type"]](self.weight_a, self.weight_b)
         self.ground_truth = np.array(list(map(int, list(data["ground_truth"]))))
         self.filepath = data["filepath"]
-        self.logger = Logger("output/simulated_data_out.log")
 
     def simulate(self):
         all_rankings_data = self.generate_simulated_data()
@@ -47,6 +45,6 @@ class Data_Simulator:
             counts = uniques[1]
             for i in range(len(unique_ranks)):
                 unique_rank_str = " ".join(unique_ranks[i].astype(str))
-                self.logger.info("Permutation: " + unique_rank_str + "\t" + " Count: "  + str(counts[i]))
+                # self.logger.info("Permutation: " + unique_rank_str + "\t" + " Count: "  + str(counts[i]))
 
         return all_rankings_data

@@ -1,4 +1,3 @@
-from utils import Logger # TODO: use logger, if you want to
 from abc import abstractmethod
 
 # Heuristics are used to find the optimal ground truth
