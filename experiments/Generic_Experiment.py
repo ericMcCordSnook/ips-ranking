@@ -8,7 +8,6 @@ import logging
 
 class Generic_Experiment:
     def __init__(self, config_data):
-        # print("New object created: Generic_Experiment")
         print(config_data)
         logging.info("Experiment Configuration \n %s \n" % config_data)
         self.config_data = config_data
@@ -29,7 +28,6 @@ class Generic_Experiment:
             raise e
 
     def configure_experiment(self):
-        # print("Experiment configuring!")
         attributes = ["optimization", "heuristic", "weight"]
         for attribute in attributes:
             if attribute in self.config_data:
@@ -49,7 +47,6 @@ class Generic_Experiment:
 
     def run(self):
         results = self.heuristic.run_heuristic({})
-        
 
         path_results = results[0]
         logging.info("Path to ground truth:")
@@ -66,7 +63,3 @@ class Generic_Experiment:
             for precomputed_result in precomputed_results.items():
                 print(precomputed_result)
                 logging.info("%s" % str(precomputed_result))
-
-
-        
-
