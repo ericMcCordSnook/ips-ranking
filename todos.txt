@@ -1,9 +1,9 @@
-Experiments we want to run:
-  1. write code for first heuristic (exploring near the mode) -- DONE
-  2. compare results with the different optimizations we have now -- DONE
+9/10
+X - write code for first heuristic (exploring near the mode) -- DONE
+X - compare results with the different optimizations we have now -- DONE
 
 
-9/20 Notes
+9/20
 - Find rank aggregation for non-weighted version and use that as a starting point
 X - Start at the various modes we have and optimize the weights for these, then
   explore the neighbors and optimize the weights for them, compare the log-likelihoods
@@ -21,3 +21,5 @@ X - Make it so unimode greedy doesn't move only on strict greater than -- DONE
 10/18
 - Develop Single_Mode_Greedy and Multi_Mode_Greedy and other heuristics to leverage pre-existing ones
 - Figure out hierarchy for simulated dataset construction and the associated config files
+- Do trials on uniform (no phi or b) as the overall baseline
+- Think about how we are going to describe/solve correlation and rank aggregation in paper
