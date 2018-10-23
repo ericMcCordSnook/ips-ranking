@@ -7,4 +7,4 @@ heuristic_params: {}
 
 weight: rankobjects.Arithmetic
 
-data_file: "data/simulated/sim_4a.csv"
+data_file: "data/simulated/sim_4_bimode.csv"

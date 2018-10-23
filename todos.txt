@@ -23,3 +23,8 @@ X - Make it so unimode greedy doesn't move only on strict greater than
 - Figure out hierarchy for simulated dataset construction and the associated config files
 - Do trials on uniform (no phi or b) as the overall baseline
 - Think about how we are going to describe/solve correlation and rank aggregation in paper
+
+10/23
+- Figure out a case where we expect the unweighed model and our model to differ and show that it does
+- Experiment for 5-bimode, 5-unimode, etc.
+- Try experiments with fewer rankings to see if noise changes things
