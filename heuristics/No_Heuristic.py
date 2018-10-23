@@ -13,9 +13,11 @@ class No_Heuristic(Generic_Heuristic):
     def run_heuristic(self, params):
         ground_truths = list(permutations([i for i in range(1, self.num_elements+1)]))
         # array containing best_phi, best_b, max_log_like for each ground_truth
-        results = np.empty((len(ground_truths), 3))
-        for i in range(len(ground_truths)):
-            self.optimization_params["ground_truth"] = np.array(ground_truths[i])
+        best_result = None
+        for i, ground_truth in enumerate(ground_truths):
+            self.optimization_params["ground_truth"] = np.array(ground_truth)
             self.optimization.set_params(self.optimization_params)
-            results[i] = self.optimization.optimize()
-        return results
+            cur_result = self.optimization.optimize()
+            if best_result is None or cur_result[2] > best_result[1][2]:
+                best_result = (ground_truth, cur_result)
+        return [best_result], {} # {} takes the place of precomputed results, we don't use this here

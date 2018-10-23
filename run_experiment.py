@@ -10,16 +10,16 @@ def yaml_load(fp):
         config_data = yaml.load(fd)
     return config_data
 
-if __name__ == '__main__':
+def main():
     config_path = sys.argv[1]
 
     # Filename is the after the last slash in the path
-        # the [:-4] removes the .yml 
+        # the [:-4] removes the .yml
     config_filename = config_path.split("/")[-1][:-4]
 
     config_data = yaml_load(config_path)
     log_output = "output/" + config_filename + ".log"
-    logging.basicConfig(filename=log_output, 
+    logging.basicConfig(filename=log_output,
                         level=logging.INFO,
                         format="%(message)s",
                         filemode='w')
@@ -33,3 +33,6 @@ if __name__ == '__main__':
 
     print("\n--- %s seconds ---" % (end_time - start_time))
     logging.info("\n--- %s seconds ---" % (end_time - start_time))
+
+if __name__ == '__main__':
+    main()

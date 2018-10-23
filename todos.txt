@@ -1,13 +1,13 @@
 9/10
-X - write code for first heuristic (exploring near the mode) -- DONE
-X - compare results with the different optimizations we have now -- DONE
+X - write code for first heuristic (exploring near the mode)
+X - compare results with the different optimizations we have now
 
 
 9/20
-- Find rank aggregation for non-weighted version and use that as a starting point
+X - Find rank aggregation for non-weighted version and use that as a starting point
 X - Start at the various modes we have and optimize the weights for these, then
   explore the neighbors and optimize the weights for them, compare the log-likelihoods
-  and move in the direction of best ranking (highest log-likelihood) -- DONE
+  and move in the direction of best ranking (highest log-likelihood)
 X - Run experiment where we start at different places (could be random) and do the naive
   way of moving between one node and another, and see if they converge to the same point.
   This will tell us if the landscape is smooth or not, which lets us know how important
@@ -15,8 +15,8 @@ X - Run experiment where we start at different places (could be random) and do t
 - Research ranking combinatorial optimization.
 
 10/4
-X - Look into why b = 0 always -- DONE
-X - Make it so unimode greedy doesn't move only on strict greater than -- DONE
+X - Look into why b = 0 always
+X - Make it so unimode greedy doesn't move only on strict greater than
 
 10/18
 - Develop Single_Mode_Greedy and Multi_Mode_Greedy and other heuristics to leverage pre-existing ones

@@ -47,19 +47,22 @@ class Generic_Experiment:
 
     def run(self):
         results = self.heuristic.run_heuristic({})
-
-        path_results = results[0]
-        logging.info("Path to ground truth:")
-        print("Path to ground truth:")
-        for path_result in path_results:
-            print(path_result)
-            logging.info("%s" % str(path_result))
-
-        if len(results)==2:
+        if len(results[0]) > 1:
+            path_results = results[0]
+            logging.info("Path to ground truth:")
+            print("Path to ground truth:")
+            for path_result in path_results:
+                print(path_result)
+                logging.info("%s" % str(path_result))
             precomputed_results = results[1]
             logging.info("\nList of computed values:")
             print("\nList of computed values:")
-
             for precomputed_result in precomputed_results.items():
                 print(precomputed_result)
                 logging.info("%s" % str(precomputed_result))
+        else:
+            single_result = results[0][0]
+            ground_truth = single_result[0]
+            phi, b, max_log_like = single_result[1]
+            logging.info("\nOptimal ground truth was %s with (phi, b, max_log_like) = (%f, %f, %f)" % (ground_truth, phi, b, max_log_like))
+            print("\nOptimal ground truth was %s with (phi, b, max_log_like) = (%f, %f, %f)" % (ground_truth, phi, b, max_log_like))
