@@ -1,0 +1,6 @@
+num_elements: 4
+num_rankings: 10
+weights: [["Arithmetic", 1.0, 0.2],["Arithmetic", 1.0, 0.2]]
+ground_truths: ["1234", "4321"]
+proportions: [0.5, 0.5]
+filepath: "data/simulated/sim_4_bimode.csv"

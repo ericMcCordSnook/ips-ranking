@@ -1,0 +1,26 @@
+2018-10-24 23:58:35.965050
+
+Permutation: 1 2 3 4 	 Count: 248
+Permutation: 1 2 4 3 	 Count: 132
+Permutation: 1 3 2 4 	 Count: 83
+Permutation: 1 3 4 2 	 Count: 58
+Permutation: 1 4 2 3 	 Count: 50
+Permutation: 1 4 3 2 	 Count: 39
+Permutation: 2 1 3 4 	 Count: 107
+Permutation: 2 1 4 3 	 Count: 44
+Permutation: 2 3 1 4 	 Count: 41
+Permutation: 2 3 4 1 	 Count: 16
+Permutation: 2 4 1 3 	 Count: 16
+Permutation: 2 4 3 1 	 Count: 9
+Permutation: 3 1 2 4 	 Count: 47
+Permutation: 3 1 4 2 	 Count: 19
+Permutation: 3 2 1 4 	 Count: 11
+Permutation: 3 2 4 1 	 Count: 13
+Permutation: 3 4 1 2 	 Count: 8
+Permutation: 3 4 2 1 	 Count: 1
+Permutation: 4 1 2 3 	 Count: 22
+Permutation: 4 1 3 2 	 Count: 11
+Permutation: 4 2 1 3 	 Count: 9
+Permutation: 4 2 3 1 	 Count: 11
+Permutation: 4 3 1 2 	 Count: 1
+Permutation: 4 3 2 1 	 Count: 4

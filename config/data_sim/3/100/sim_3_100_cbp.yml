@@ -1,0 +1,6 @@
+num_elements: 3
+num_rankings: 100
+weights: [["Arithmetic",1.0,0.5],["Arithmetic",1.0,0.5],["Arithmetic",1.0,0.5]]
+ground_truths: ["123","231","321"]
+proportions: [0.34,0.33,0.33]
+filepath: "data/simulated/sim_3_100_cbp.csv"

@@ -1,0 +1,6 @@
+num_elements: 4
+num_rankings: 100
+weights: [["Arithmetic",1.0,0.2]]
+ground_truths: ["1234"]
+proportions: [1.0]
+filepath: "data/simulated/sim_4_unimode_100.csv"

@@ -1,0 +1,15 @@
+2018-10-25 00:25:01.328781
+
+Experiment Configuration 
+ {'optimization': 'optimizations.Unweighted', 'optimization_params': {}, 'heuristic': 'heuristics.No_Heuristic', 'heuristic_params': {}, 'weight': 'rankobjects.Arithmetic', 'data_file': 'data/simulated/sim_3_10.csv'} 
+
+Unweighted max log likelihood for [1 2 3] is -15.208677
+Unweighted max log likelihood for [1 3 2] is -19.208677
+Unweighted max log likelihood for [2 1 3] is -19.208677
+Unweighted max log likelihood for [2 3 1] is -25.208677
+Unweighted max log likelihood for [3 1 2] is -25.208677
+Unweighted max log likelihood for [3 2 1] is -29.208677
+
+Optimal ground truth was (1, 2, 3) with (phi, b, max_log_like) = (1.000000, 0.000000, -15.208677)
+
+--- 0.02199387550354004 seconds ---

@@ -3,4 +3,4 @@ num_rankings: 1000
 weights: [["Arithmetic",1.0,0.2]]
 ground_truths: ["123"]
 proportions: [1.0]
-filepath: "data/simulated/sim_3.csv"
+filepath: "data/simulated/sim_3_1000.csv"

@@ -21,10 +21,13 @@ X - Make it so unimode greedy doesn't move only on strict greater than
 10/18
 - Develop Single_Mode_Greedy and Multi_Mode_Greedy and other heuristics to leverage pre-existing ones
 - Figure out hierarchy for simulated dataset construction and the associated config files
-- Do trials on uniform (no phi or b) as the overall baseline
 - Think about how we are going to describe/solve correlation and rank aggregation in paper
 
 10/23
-- Figure out a case where we expect the unweighed model and our model to differ and show that it does
-- Experiment for 5-bimode, 5-unimode, etc.
-- Try experiments with fewer rankings to see if noise changes things
+X - Figure out a case where we expect the unweighted model and our model to differ and show that it does
+X - Experiment for 5-bimode, 5-unimode, etc.
+X - Try experiments with fewer rankings to see if noise changes things
+
+10/25
+- If we still are having trouble finding a case where unweighted/weighted models differ, write script to
+  generate data files with random proportions and ground truths and see where they differ and find a pattern

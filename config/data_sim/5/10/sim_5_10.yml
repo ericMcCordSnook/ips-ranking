@@ -1,0 +1,6 @@
+num_elements: 5
+num_rankings: 10
+weights: [["Arithmetic",1.0,0.2]]
+ground_truths: ["12345"]
+proportions: [1.0]
+filepath: "data/simulated/sim_5_10.csv"
