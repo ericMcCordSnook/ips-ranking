@@ -46,7 +46,7 @@ def write_slurm_file(file_name, config_file):
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=esm7ky@virginia.edu
 load module anaconda2
-python run_experiment.py """ + config_file
+python3 run_experiment.py """ + config_file
     with open(file_name, 'w') as f:
         f.write(config_str)
 
@@ -56,8 +56,8 @@ def main():
     num_elements = 4
     for exp in range(num_experiments):
         # freq_tbl = create_freq_table(num_rankings=num_rankings, num_elements=num_elements)
-        # file_name = "config/experiments/random/unweighted/rand_exp_"+str(num_elements)+"_"+str(num_rankings)+"_"+str(exp)+".yml"
-        file_name = "slurms/random_exp/rand_exp_"+str(num_elements)+"_"+str(num_rankings)+"_"+str(exp)+".slurm"
+        file_name = "config/experiments/random/unweighted/rand_exp_"+str(num_elements)+"_"+str(num_rankings)+"_"+str(exp)+".yml"
+        # file_name = "slurms/random_exp/rand_exp_"+str(num_elements)+"_"+str(num_rankings)+"_"+str(exp)+".slurm"
         config_file = "config/experiments/random/unweighted/rand_exp_"+str(num_elements)+"_"+str(num_rankings)+"_"+str(exp)+".yml"
         # data_file = "data/random/rand_exp_"+str(num_elements)+"_"+str(num_rankings)+"_"+str(exp)+".csv"
         # write_data_to_file(freq_tbl, file_name)
