@@ -1,50 +1,50 @@
-sbatch slurms/random_exp/rand_exp_4_50_0.slurm
-sbatch slurms/random_exp/rand_exp_4_50_1.slurm
-sbatch slurms/random_exp/rand_exp_4_50_2.slurm
-sbatch slurms/random_exp/rand_exp_4_50_3.slurm
-sbatch slurms/random_exp/rand_exp_4_50_4.slurm
-sbatch slurms/random_exp/rand_exp_4_50_5.slurm
-sbatch slurms/random_exp/rand_exp_4_50_6.slurm
-sbatch slurms/random_exp/rand_exp_4_50_7.slurm
-sbatch slurms/random_exp/rand_exp_4_50_8.slurm
-sbatch slurms/random_exp/rand_exp_4_50_9.slurm
-sbatch slurms/random_exp/rand_exp_4_50_10.slurm
-sbatch slurms/random_exp/rand_exp_4_50_11.slurm
-sbatch slurms/random_exp/rand_exp_4_50_12.slurm
-sbatch slurms/random_exp/rand_exp_4_50_13.slurm
-sbatch slurms/random_exp/rand_exp_4_50_14.slurm
-sbatch slurms/random_exp/rand_exp_4_50_15.slurm
-sbatch slurms/random_exp/rand_exp_4_50_16.slurm
-sbatch slurms/random_exp/rand_exp_4_50_17.slurm
-sbatch slurms/random_exp/rand_exp_4_50_18.slurm
-sbatch slurms/random_exp/rand_exp_4_50_19.slurm
-sbatch slurms/random_exp/rand_exp_4_50_20.slurm
-sbatch slurms/random_exp/rand_exp_4_50_21.slurm
-sbatch slurms/random_exp/rand_exp_4_50_22.slurm
-sbatch slurms/random_exp/rand_exp_4_50_23.slurm
-sbatch slurms/random_exp/rand_exp_4_50_24.slurm
-sbatch slurms/random_exp/rand_exp_4_50_25.slurm
-sbatch slurms/random_exp/rand_exp_4_50_26.slurm
-sbatch slurms/random_exp/rand_exp_4_50_27.slurm
-sbatch slurms/random_exp/rand_exp_4_50_28.slurm
-sbatch slurms/random_exp/rand_exp_4_50_29.slurm
-sbatch slurms/random_exp/rand_exp_4_50_30.slurm
-sbatch slurms/random_exp/rand_exp_4_50_31.slurm
-sbatch slurms/random_exp/rand_exp_4_50_32.slurm
-sbatch slurms/random_exp/rand_exp_4_50_33.slurm
-sbatch slurms/random_exp/rand_exp_4_50_34.slurm
-sbatch slurms/random_exp/rand_exp_4_50_35.slurm
-sbatch slurms/random_exp/rand_exp_4_50_36.slurm
-sbatch slurms/random_exp/rand_exp_4_50_37.slurm
-sbatch slurms/random_exp/rand_exp_4_50_38.slurm
-sbatch slurms/random_exp/rand_exp_4_50_39.slurm
-sbatch slurms/random_exp/rand_exp_4_50_40.slurm
-sbatch slurms/random_exp/rand_exp_4_50_41.slurm
-sbatch slurms/random_exp/rand_exp_4_50_42.slurm
-sbatch slurms/random_exp/rand_exp_4_50_43.slurm
-sbatch slurms/random_exp/rand_exp_4_50_44.slurm
-sbatch slurms/random_exp/rand_exp_4_50_45.slurm
-sbatch slurms/random_exp/rand_exp_4_50_46.slurm
-sbatch slurms/random_exp/rand_exp_4_50_47.slurm
-sbatch slurms/random_exp/rand_exp_4_50_48.slurm
-sbatch slurms/random_exp/rand_exp_4_50_49.slurm
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_0.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_1.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_2.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_3.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_4.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_5.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_6.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_7.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_8.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_9.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_10.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_11.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_12.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_13.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_14.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_15.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_16.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_17.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_18.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_19.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_20.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_21.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_22.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_23.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_24.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_25.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_26.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_27.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_28.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_29.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_30.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_31.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_32.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_33.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_34.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_35.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_36.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_37.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_38.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_39.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_40.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_41.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_42.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_43.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_44.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_45.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_46.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_47.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_48.yml
+python run_experiment.py config/experiments/random/exhaustive/rand_exp_4_50_49.yml
