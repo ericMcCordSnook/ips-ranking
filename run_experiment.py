@@ -18,7 +18,7 @@ def main():
     config_filename = config_path.split("/")[-1][:-4]
 
     config_data = yaml_load(config_path)
-    log_output = "output/" + config_filename + ".log"
+    log_output = "output/random_exp/" + config_filename + ".log"
     logging.basicConfig(filename=log_output,
                         level=logging.INFO,
                         format="%(message)s",
