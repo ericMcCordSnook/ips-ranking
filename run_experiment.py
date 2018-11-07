@@ -1,5 +1,5 @@
 import sys
-import yaml
+import ruamel.yaml as yaml
 import time
 from experiments import Generic_Experiment
 import logging
@@ -7,7 +7,8 @@ import datetime
 
 def yaml_load(fp):
     with open(fp, "r") as fd:
-        config_data = yaml.load(fd)
+        config_data = yaml.safe_load(fd)
+    print(config_data)
     return config_data
 
 def main():

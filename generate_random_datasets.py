@@ -58,11 +58,11 @@ def main():
         # freq_tbl = create_freq_table(num_rankings=num_rankings, num_elements=num_elements)
         file_name = "config/experiments/random/unweighted/rand_exp_"+str(num_elements)+"_"+str(num_rankings)+"_"+str(exp)+".yml"
         # file_name = "slurms/random_exp/rand_exp_"+str(num_elements)+"_"+str(num_rankings)+"_"+str(exp)+".slurm"
-        config_file = "config/experiments/random/unweighted/rand_exp_"+str(num_elements)+"_"+str(num_rankings)+"_"+str(exp)+".yml"
-        # data_file = "data/random/rand_exp_"+str(num_elements)+"_"+str(num_rankings)+"_"+str(exp)+".csv"
+        # config_file = "config/experiments/random/unweighted/rand_exp_"+str(num_elements)+"_"+str(num_rankings)+"_"+str(exp)+".yml"
+        data_file = "data/random/rand_exp_"+str(num_elements)+"_"+str(num_rankings)+"_"+str(exp)+".csv"
         # write_data_to_file(freq_tbl, file_name)
-        # write_config_file(file_name, data_file)
-        write_slurm_file(file_name, config_file)
+        write_config_file(file_name, data_file)
+        # write_slurm_file(file_name, config_file)
 
 if __name__ == '__main__':
     main()
