@@ -31,3 +31,4 @@ X - Try experiments with fewer rankings to see if noise changes things
 10/25
 - If we still are having trouble finding a case where unweighted/weighted models differ, write script to
   generate data files with random proportions and ground truths and see where they differ and find a pattern
+- Correlation measure, map d_max -> 1, 0 to -1, and E[d] = 0

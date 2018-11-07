@@ -1,0 +1,6 @@
+optimization: optimizations.Exhaustive_Search
+optimization_params: { 'granularity': 10 }
+heuristic: heuristics.No_Heuristic
+heuristic_params: {}
+weight: rankobjects.Arithmetic
+data_file: data/random/rand_exp_4_50_25.csv
