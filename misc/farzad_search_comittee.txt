@@ -1,0 +1,16 @@
+1,4 order
+
+unweighted (8 tied with log-likelihood of -27.107712)
+
+Unweighted max log likelihood for [3 5 2 6 1 4 7] is -27.107712
+Unweighted max log likelihood for [3 5 6 1 2 4 7] is -27.107712
+Unweighted max log likelihood for [3 5 6 1 4 2 7] is -27.107712
+Unweighted max log likelihood for [3 5 6 2 1 4 7] is -27.107712
+Unweighted max log likelihood for [5 3 2 6 1 4 7] is -27.107712
+Unweighted max log likelihood for [5 3 6 1 2 4 7] is -27.107712
+Unweighted max log likelihood for [5 3 6 1 4 2 7] is -27.107712
+Unweighted max log likelihood for [5 3 6 2 1 4 7] is -27.107712
+
+weighted (same 8 tied with log-likelihood of -26.271021)
+
+4,1 order
