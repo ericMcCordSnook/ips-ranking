@@ -1,0 +1,11 @@
+sbatch slurms/preflib/ED-9-1-exhaustive.slurm
+sbatch slurms/preflib/ED-9-2-exhaustive.slurm
+sbatch slurms/preflib/ED-24-1-exhaustive.slurm
+sbatch slurms/preflib/ED-24-2-exhaustive.slurm
+sbatch slurms/preflib/ED-24-3-exhaustive.slurm
+sbatch slurms/preflib/ED-24-4-exhaustive.slurm
+sbatch slurms/preflib/ED-25-1-exhaustive.slurm
+sbatch slurms/preflib/ED-25-2-exhaustive.slurm
+sbatch slurms/preflib/ED-25-3-exhaustive.slurm
+sbatch slurms/preflib/ED-25-4-exhaustive.slurm
+sbatch slurms/preflib/ED-32-2-exhaustive.slurm
