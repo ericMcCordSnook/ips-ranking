@@ -1,5 +1,3 @@
-python run_experiment.py config/experiments/preflib/ED-9-1-exhaustive.yml
-python run_experiment.py config/experiments/preflib/ED-9-2-exhaustive.yml
 python run_experiment.py config/experiments/preflib/ED-24-1-exhaustive.yml
 python run_experiment.py config/experiments/preflib/ED-24-2-exhaustive.yml
 python run_experiment.py config/experiments/preflib/ED-24-3-exhaustive.yml
@@ -9,3 +7,4 @@ python run_experiment.py config/experiments/preflib/ED-25-2-exhaustive.yml
 python run_experiment.py config/experiments/preflib/ED-25-3-exhaustive.yml
 python run_experiment.py config/experiments/preflib/ED-25-4-exhaustive.yml
 python run_experiment.py config/experiments/preflib/ED-32-2-exhaustive.yml
+python run_experiment.py config/experiments/preflib/ED-9-2-exhaustive.yml
