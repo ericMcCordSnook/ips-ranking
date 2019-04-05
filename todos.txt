@@ -36,3 +36,9 @@ X - Try experiments with fewer rankings to see if noise changes things
 
 11/7
 - make it so ties are stored when the log-likelihood for two possible ground truths is the same (and the best seen)
+
+
+4/4
+- https://pypi.org/project/google-search/
+- https://pypi.org/project/py-bing-search/
+- https://pypi.org/project/duckduckgo2/
