@@ -1,0 +1,10 @@
+# These are the values used in analyzing the data
+optimization: optimizations.Unweighted
+optimization_params: {}
+
+heuristic: heuristics.No_Heuristic
+heuristic_params: {}
+
+weight: rankobjects.Arithmetic
+
+data_file: "data/preflib/ED-9-2.csv"

@@ -1,0 +1,33 @@
+2019-04-05 10:06:33.336631
+
+Experiment Configuration 
+ {'optimization': 'optimizations.Unweighted', 'optimization_params': {}, 'heuristic': 'heuristics.No_Heuristic', 'heuristic_params': {}, 'weight': 'rankobjects.Arithmetic', 'data_file': 'data/preflib/ED-24-4.csv'} 
+
+Unweighted max log likelihood for [1 2 3 4] is -2312.879536
+Unweighted max log likelihood for [1 2 4 3] is -2572.879536
+Unweighted max log likelihood for [1 3 2 4] is -2556.879536
+Unweighted max log likelihood for [1 3 4 2] is -2956.879536
+Unweighted max log likelihood for [1 4 2 3] is -2972.879536
+Unweighted max log likelihood for [1 4 3 2] is -3216.879536
+Unweighted max log likelihood for [2 1 3 4] is -2522.879536
+Unweighted max log likelihood for [2 1 4 3] is -2782.879536
+Unweighted max log likelihood for [2 3 1 4] is -2916.879536
+Unweighted max log likelihood for [2 3 4 1] is -3390.879536
+Unweighted max log likelihood for [2 4 1 3] is -3256.879536
+Unweighted max log likelihood for [2 4 3 1] is -3650.879536
+Unweighted max log likelihood for [3 1 2 4] is -2950.879536
+Unweighted max log likelihood for [3 1 4 2] is -3350.879536
+Unweighted max log likelihood for [3 2 1 4] is -3160.879536
+Unweighted max log likelihood for [3 2 4 1] is -3634.879536
+Unweighted max log likelihood for [3 4 1 2] is -3824.879536
+Unweighted max log likelihood for [3 4 2 1] is -4034.879536
+Unweighted max log likelihood for [4 1 2 3] is -3446.879536
+Unweighted max log likelihood for [4 1 3 2] is -3690.879536
+Unweighted max log likelihood for [4 2 1 3] is -3656.879536
+Unweighted max log likelihood for [4 2 3 1] is -4050.879536
+Unweighted max log likelihood for [4 3 1 2] is -4084.879536
+Unweighted max log likelihood for [4 3 2 1] is -4294.879536
+
+Optimal ground truth was (1, 2, 3, 4) with (phi, b, max_log_like) = (1.000000, 0.000000, -2312.879536)
+
+--- 1.9199998378753662 seconds ---
