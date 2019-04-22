@@ -83,20 +83,9 @@ class Ranking:
         return delta_vect.astype(int)
 
     def calc_weight_sum(self):
-        """
         weight_sum_vect = np.zeros(self.num_elements)
 
         for j in range(self.num_elements):
-            #### CHANGED j+1 to j
-            weight_sum_vect[j] = self.weight.calc_weight_sum(j, self.deltas[j])
-
-        return weight_sum_vect
-        """
-        weight_sum_vect = np.zeros(self.num_elements)
-
-        for j in range(self.num_elements):
-            #print("j is: ", j)
-            #print("delta_j is: ", self.deltas[j])
             weight_sum_vect[j] = self.weight.calc_weight_sum(j, self.deltas[j])
 
         return weight_sum_vect
@@ -134,15 +123,8 @@ class Ranking:
     def calc_log_pi_prob(self):
         return np.log(self.calc_pi_prob())
 
-    """
-    def calc_log_pi_prob_v2(self):
-        weight_sum = self.calc_weight_sum()
-        log_marg_weight_sum = np.log(self.calc_marginal_weight_sum())
-
-        log_vect = -self.phi*weight_sum - log_marg_weight_sum
-
-        return np.sum(log_vect)
-    """
+    def calc_dist(self, other_rank):
+        print(self.rank)
 
     def get_num_elements(self):
         return self.num_elements
