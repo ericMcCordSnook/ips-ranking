@@ -124,7 +124,18 @@ class Ranking:
         return np.log(self.calc_pi_prob())
 
     def calc_dist(self, other_rank):
-        print(self.rank)
+        self.ground_truth = other_rank.rank
+        self.rank = self.ground_truth_transform()
+        weight_sum = 0
+
+        # bubble sort to compute (weighted) kemeny distance
+        for i in range(self.num_elements):
+            for j in range(0, self.num_elements-i-1):
+                if self.rank[j] > self.rank[j+1]:
+                    self.rank[j], self.rank[j+1] = self.rank[j+1], self.rank[j]
+                    weight_sum += self.weights_vect[j]
+
+        return weight_sum
 
     def get_num_elements(self):
         return self.num_elements
