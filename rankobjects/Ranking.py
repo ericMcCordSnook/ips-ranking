@@ -137,6 +137,9 @@ class Ranking:
 
         return weight_sum
 
+    def shuffle_ranking(self):
+        self.rank = np.random.permutation(self.identity).astype(int)
+
     def get_num_elements(self):
         return self.num_elements
 
