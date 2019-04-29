@@ -11,19 +11,29 @@ def read_csv(file, has_header=False):
 def get_data(data_file):
     return read_csv(data_file).astype(int)
 
-def write_data_to_file(freq_tbl, file_name):
-    with open(file_name, 'w') as f:
-        f.write("# x,x,x,x\n")
-        for perm, freq in freq_tbl.items():
-            perm_str = str(perm)[1:-1].replace(' ','')
-            for i in range(freq):
-                f.write(perm_str + "\n")
+def get_soc_data(file_path):
+    with open(file_path, 'r') as f:
+        lines = f.readlines()
+        num_results = int(lines[0])
+        num_rankings = int(lines[num_results + 1].split(',')[2])
+        data = []
+        for line in lines[num_results + 2:]:
+            nums = line.split(',')
+            for i in range(int(nums[0])): # number of times same ranking repeats in data
+                data.append(nums[1:])
+        data = np.array(data).astype(int)
+    return data
+
+def shorten_file_name(file_name):
+    parts = file_name[:-4].split("-")
+    return "ED-" + str(int(parts[1])) + "-" + str(int(parts[2])) + '.csv'
 
 def main():
-    for file_name in os.listdir("data/preflib_dirty"):
+    for file_name in os.listdir("data/preflib/dirty_15"):
         print(file_name)
-        data = get_data("data/preflib_dirty/" + file_name)
-        with open("data/preflib/" + file_name, 'w') as f:
+        data = get_soc_data("data/preflib/dirty_15/" + file_name)
+        shortened_file_name = shorten_file_name(file_name)
+        with open("data/preflib/clean_15/" + shortened_file_name, 'w') as f:
             num_items = len(data[0])
             line_str = "# " + (num_items-1)*"x," + "x"
             f.write(line_str + "\n")
