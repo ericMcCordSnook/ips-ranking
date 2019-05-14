@@ -152,6 +152,9 @@ class Ranking:
     def get_rank(self):
         return self.rank
 
+    def set_rank(self, new_rank):
+        self.rank = new_rank.astype(int)
+
     def __str__(self):
         return "\nRanking:\t" + str(self.rank) + "\nWeights:\t" + str(self.weights_vect) + \
             "\nDeltas:\t\t" + str(self.deltas)
