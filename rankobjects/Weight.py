@@ -22,6 +22,24 @@ class Weight:
     def calc_weight_sum(self, j, delt):
         pass
 
+# Unweighted weights are a Weight in which weights are all equal, i.e., all weights are 1
+class Unweighted(Weight):
+    def __init__(self, a=0.0, b=0.0, cutoff=None):
+        super().__init__(a=a, b=b, cutoff=cutoff)
+        self.sequence = "unweighted"
+
+    def generate_weights_vect(self, num_elements):
+        weights = np.ones(num_elements-1)
+        if self.cutoff is not None:
+            weights[self.cutoff:] = 0.0
+        return weights
+
+    def calc_weight_sum(self, j, delt):
+        if j > self.cutoff:
+            return 0.0
+        elif j + delt - 1 >= self.cutoff:
+            delt = self.cutoff - j
+        return delt
 
 # Arithmetic weights are a Weight in which weights are determined arithmetically
 # of the form: a-l*b, where l is the position of the identity vector of size num_elements
@@ -83,6 +101,6 @@ class Harmonic(Weight):
 
     def calc_weight_sum(self, j, delt):
         s = 0
-        for l in range(j, np.min(j + delt, cutoff)):
+        for l in range(j, np.min(j + delt, self.cutoff)):
             s += 1.0/l
         return s

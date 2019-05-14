@@ -2,7 +2,7 @@ import os
 import sys
 import random
 import numpy as np
-from rankobjects.Weight import Arithmetic, Geometric
+from rankobjects.Weight import Arithmetic, Geometric, Harmonic
 from rankobjects.Ranking import Ranking
 
 # Read in the data from given file
@@ -14,7 +14,7 @@ def read_cmd_args():
     try:
         num_items = int(sys.argv[1])
         weight_type = sys.argv[2]
-        if weight_type not in ["Arithmetic", "Geometric"]:
+        if weight_type not in ["Arithmetic", "Geometric", "Harmonic"]:
             raise Exception()
         b = float(sys.argv[3])
     except:
@@ -47,8 +47,8 @@ def compute_correlation_from_dist(dist, avg, max_dist):
         return -1*(dist-avg)/(max_dist-avg)
 
 def main():
-    with open("output/preflib/web_search_correlations.log", 'w') as f:
-        weight_type = "Geometric"
+    with open("output/preflib/web_search_correlations_harmonic.log", 'w') as f:
+        weight_type = "Harmonic"
         b = 0.9
         f.write('weight_type: ' + weight_type + "\n")
         f.write('b: ' + str(b) + "\n\n")
