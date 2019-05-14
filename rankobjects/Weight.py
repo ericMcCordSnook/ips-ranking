@@ -11,7 +11,7 @@ class Weight:
 
         self.a = a
         self.b = b
-        self.cutoff = cutoff
+        self.cutoff = cutoff # This is the number of items AFTER WHICH weights are all 0
         self.sequence = None
 
     @abstractmethod
@@ -101,6 +101,10 @@ class Harmonic(Weight):
 
     def calc_weight_sum(self, j, delt):
         s = 0
-        for l in range(j, np.min(j + delt, self.cutoff)):
-            s += 1.0/l
+        if self.cutoff is None:
+            for l in range(j+1, j + delt + 1):
+                s += 1.0/l
+        else:
+            for l in range(j+1, np.min(j + delt + 1, self.cutoff)):
+                s += 1.0/l
         return s
