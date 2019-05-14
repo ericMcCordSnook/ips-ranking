@@ -1,0 +1,636 @@
+weight_type: Harmonic
+b: 0.0
+cutoff: 30
+
+ED-15-1.csv
+num_items: 240
+num_rankings: 4
+avg_weighted, max_dist_weighted: 87.937, 928.797
+avg_unweighted, max_dist_unweighted: 1179.678, 6735.0
+avg_corr_weighted: 0.6420601557285791
+avg_corr_unweighted: -0.9688886920806151
+
+ED-15-10.csv
+num_items: 71
+num_rankings: 4
+avg_weighted, max_dist_weighted: 52.001, 253.644
+avg_unweighted, max_dist_unweighted: 617.803, 1665.0
+avg_corr_weighted: 0.5761037507170873
+avg_corr_unweighted: -0.1576120793788464
+
+ED-15-11.csv
+num_items: 63
+num_rankings: 4
+avg_weighted, max_dist_weighted: 47.738, 221.684
+avg_unweighted, max_dist_unweighted: 562.04, 1425.0
+avg_corr_weighted: 0.659182408029362
+avg_corr_unweighted: 0.06542449672871105
+
+ED-15-12.csv
+num_items: 100
+num_rankings: 4
+avg_weighted, max_dist_weighted: 61.427, 369.499
+avg_unweighted, max_dist_unweighted: 774.905, 2535.0
+avg_corr_weighted: 0.5503153442118369
+avg_corr_unweighted: -0.29535645561773693
+
+ED-15-13.csv
+num_items: 93
+num_rankings: 4
+avg_weighted, max_dist_weighted: 59.332, 341.534
+avg_unweighted, max_dist_unweighted: 735.98, 2325.0
+avg_corr_weighted: 0.4456061369605588
+avg_corr_unweighted: -0.5150044342858032
+
+ED-15-14.csv
+num_items: 163
+num_rankings: 4
+avg_weighted, max_dist_weighted: 76.841, 621.183
+avg_unweighted, max_dist_unweighted: 998.154, 4425.0
+avg_corr_weighted: 0.7176138075968045
+avg_corr_unweighted: -0.6998267571201238
+
+ED-15-15.csv
+num_items: 69
+num_rankings: 4
+avg_weighted, max_dist_weighted: 50.654, 245.654
+avg_unweighted, max_dist_unweighted: 598.175, 1605.0
+avg_corr_weighted: 0.6063705159000586
+avg_corr_unweighted: -0.13404601763925672
+
+ED-15-16.csv
+num_items: 70
+num_rankings: 4
+avg_weighted, max_dist_weighted: 50.817, 249.649
+avg_unweighted, max_dist_unweighted: 608.641, 1635.0
+avg_corr_weighted: 0.6012142483676927
+avg_corr_unweighted: -0.07115835945255704
+
+ED-15-17.csv
+num_items: 127
+num_rankings: 4
+avg_weighted, max_dist_weighted: 68.591, 477.363
+avg_unweighted, max_dist_unweighted: 882.377, 3345.0
+avg_corr_weighted: 0.7472414477254508
+avg_corr_unweighted: -0.5595105934824398
+
+ED-15-18.csv
+num_items: 115
+num_rankings: 4
+avg_weighted, max_dist_weighted: 65.426, 429.424
+avg_unweighted, max_dist_unweighted: 832.062, 2985.0
+avg_corr_weighted: 0.66178831053496
+avg_corr_unweighted: -0.417990797405045
+
+ED-15-19.csv
+num_items: 87
+num_rankings: 4
+avg_weighted, max_dist_weighted: 57.197, 317.564
+avg_unweighted, max_dist_unweighted: 711.056, 2145.0
+avg_corr_weighted: 0.622661757036265
+avg_corr_unweighted: -0.17655354311031055
+
+ED-15-2.csv
+num_items: 240
+num_rankings: 5
+avg_weighted, max_dist_weighted: 88.34, 928.797
+avg_unweighted, max_dist_unweighted: 1173.793, 6735.0
+avg_corr_weighted: 0.6943714392621821
+avg_corr_unweighted: -0.7663764525844605
+
+ED-15-20.csv
+num_items: 122
+num_rankings: 4
+avg_weighted, max_dist_weighted: 67.392, 457.388
+avg_unweighted, max_dist_unweighted: 861.156, 3195.0
+avg_corr_weighted: 0.6073371014721095
+avg_corr_unweighted: -0.6722718109119251
+
+ED-15-21.csv
+num_items: 96
+num_rankings: 4
+avg_weighted, max_dist_weighted: 60.779, 353.519
+avg_unweighted, max_dist_unweighted: 752.075, 2415.0
+avg_corr_weighted: 0.6549666863996867
+avg_corr_unweighted: -0.29388759768805656
+
+ED-15-22.csv
+num_items: 112
+num_rankings: 4
+avg_weighted, max_dist_weighted: 65.288, 417.439
+avg_unweighted, max_dist_unweighted: 828.69, 2895.0
+avg_corr_weighted: 0.6536724779884011
+avg_corr_unweighted: -0.42969188541735
+
+ED-15-23.csv
+num_items: 142
+num_rankings: 4
+avg_weighted, max_dist_weighted: 72.113, 537.288
+avg_unweighted, max_dist_unweighted: 931.331, 3795.0
+avg_corr_weighted: 0.6645017939093255
+avg_corr_unweighted: -0.6481991485170723
+
+ED-15-24.csv
+num_items: 91
+num_rankings: 4
+avg_weighted, max_dist_weighted: 58.796, 333.544
+avg_unweighted, max_dist_unweighted: 732.281, 2265.0
+avg_corr_weighted: 0.5247974008162244
+avg_corr_unweighted: -0.1854833952533047
+
+ED-15-25.csv
+num_items: 115
+num_rankings: 4
+avg_weighted, max_dist_weighted: 65.88, 429.424
+avg_unweighted, max_dist_unweighted: 836.491, 2985.0
+avg_corr_weighted: 0.5726825411904948
+avg_corr_unweighted: -0.4670648989290502
+
+ED-15-26.csv
+num_items: 82
+num_rankings: 4
+avg_weighted, max_dist_weighted: 55.606, 297.589
+avg_unweighted, max_dist_unweighted: 676.045, 1995.0
+avg_corr_weighted: 0.5811891669672102
+avg_corr_unweighted: -0.13462910189443392
+
+ED-15-27.csv
+num_items: 95
+num_rankings: 4
+avg_weighted, max_dist_weighted: 60.041, 349.524
+avg_unweighted, max_dist_unweighted: 752.471, 2385.0
+avg_corr_weighted: 0.5538589169988674
+avg_corr_unweighted: -0.32581757598439914
+
+ED-15-28.csv
+num_items: 102
+num_rankings: 4
+avg_weighted, max_dist_weighted: 62.253, 377.489
+avg_unweighted, max_dist_unweighted: 778.892, 2595.0
+avg_corr_weighted: 0.5049000396304811
+avg_corr_unweighted: -0.4185496596084352
+
+ED-15-29.csv
+num_items: 106
+num_rankings: 4
+avg_weighted, max_dist_weighted: 63.366, 393.469
+avg_unweighted, max_dist_unweighted: 806.253, 2715.0
+avg_corr_weighted: 0.7294315930692864
+avg_corr_unweighted: -0.3207684584713754
+
+ED-15-3.csv
+num_items: 242
+num_rankings: 4
+avg_weighted, max_dist_weighted: 88.023, 936.787
+avg_unweighted, max_dist_unweighted: 1181.771, 6795.0
+avg_corr_weighted: 0.3181670919740372
+avg_corr_unweighted: -1.973058465991678
+
+ED-15-30.csv
+num_items: 64
+num_rankings: 4
+avg_weighted, max_dist_weighted: 48.648, 225.679
+avg_unweighted, max_dist_unweighted: 563.656, 1455.0
+avg_corr_weighted: 0.6030332759033028
+avg_corr_unweighted: -0.03546635552865277
+
+ED-15-31.csv
+num_items: 67
+num_rankings: 4
+avg_weighted, max_dist_weighted: 49.826, 237.664
+avg_unweighted, max_dist_unweighted: 591.241, 1545.0
+avg_corr_weighted: 0.6408510759494422
+avg_corr_unweighted: -0.019694170745525676
+
+ED-15-32.csv
+num_items: 153
+num_rankings: 4
+avg_weighted, max_dist_weighted: 74.213, 581.233
+avg_unweighted, max_dist_unweighted: 972.876, 4125.0
+avg_corr_weighted: 0.6598411893787941
+avg_corr_unweighted: -0.6595858027149736
+
+ED-15-33.csv
+num_items: 128
+num_rankings: 4
+avg_weighted, max_dist_weighted: 69.593, 481.358
+avg_unweighted, max_dist_unweighted: 887.964, 3375.0
+avg_corr_weighted: 0.6151536603744499
+avg_corr_unweighted: -0.5736115038071873
+
+ED-15-34.csv
+num_items: 55
+num_rankings: 4
+avg_weighted, max_dist_weighted: 43.922, 189.724
+avg_unweighted, max_dist_unweighted: 492.818, 1185.0
+avg_corr_weighted: 0.4190592581210619
+avg_corr_unweighted: 0.0642712597914395
+
+ED-15-35.csv
+num_items: 68
+num_rankings: 4
+avg_weighted, max_dist_weighted: 49.942, 241.659
+avg_unweighted, max_dist_unweighted: 596.823, 1575.0
+avg_corr_weighted: 0.4781044794844798
+avg_corr_unweighted: -0.08980516268846307
+
+ED-15-36.csv
+num_items: 102
+num_rankings: 4
+avg_weighted, max_dist_weighted: 62.203, 377.489
+avg_unweighted, max_dist_unweighted: 782.924, 2595.0
+avg_corr_weighted: 0.5079816397263417
+avg_corr_unweighted: -0.4235366800617393
+
+ED-15-37.csv
+num_items: 67
+num_rankings: 4
+avg_weighted, max_dist_weighted: 49.909, 237.664
+avg_unweighted, max_dist_unweighted: 587.164, 1545.0
+avg_corr_weighted: 0.5440952759651776
+avg_corr_unweighted: -0.05793786587400925
+
+ED-15-38.csv
+num_items: 93
+num_rankings: 4
+avg_weighted, max_dist_weighted: 60.219, 341.534
+avg_unweighted, max_dist_unweighted: 737.319, 2325.0
+avg_corr_weighted: 0.6287574472161214
+avg_corr_unweighted: -0.2328932613022864
+
+ED-15-39.csv
+num_items: 89
+num_rankings: 4
+avg_weighted, max_dist_weighted: 58.483, 325.554
+avg_unweighted, max_dist_unweighted: 718.397, 2205.0
+avg_corr_weighted: 0.6499459969339988
+avg_corr_unweighted: -0.11435093613207885
+
+ED-15-4.csv
+num_items: 242
+num_rankings: 5
+avg_weighted, max_dist_weighted: 88.507, 936.787
+avg_unweighted, max_dist_unweighted: 1174.763, 6795.0
+avg_corr_weighted: 0.4145765666282039
+avg_corr_unweighted: -1.7195426100358404
+
+ED-15-40.csv
+num_items: 131
+num_rankings: 4
+avg_weighted, max_dist_weighted: 70.496, 493.343
+avg_unweighted, max_dist_unweighted: 900.917, 3465.0
+avg_corr_weighted: 0.5219408924629
+avg_corr_unweighted: -0.6802506051104392
+
+ED-15-41.csv
+num_items: 70
+num_rankings: 4
+avg_weighted, max_dist_weighted: 51.077, 249.649
+avg_unweighted, max_dist_unweighted: 602.05, 1635.0
+avg_corr_weighted: 0.4913554064340943
+avg_corr_unweighted: -0.20152109038116203
+
+ED-15-42.csv
+num_items: 100
+num_rankings: 4
+avg_weighted, max_dist_weighted: 61.654, 369.499
+avg_unweighted, max_dist_unweighted: 764.801, 2535.0
+avg_corr_weighted: 0.5882160027958757
+avg_corr_unweighted: -0.5096596484350064
+
+ED-15-43.csv
+num_items: 18
+num_rankings: 4
+avg_weighted, max_dist_weighted: 14.566, 44.912
+avg_unweighted, max_dist_unweighted: 76.5, 153.0
+avg_corr_weighted: 0.3329216837818159
+avg_corr_unweighted: 0.2962962962962962
+
+ED-15-44.csv
+num_items: 45
+num_rankings: 4
+avg_weighted, max_dist_weighted: 37.653, 149.774
+avg_unweighted, max_dist_unweighted: 402.929, 885.0
+avg_corr_weighted: 0.6078678997097319
+avg_corr_unweighted: 0.31418852122003293
+
+ED-15-45.csv
+num_items: 32
+num_rankings: 4
+avg_weighted, max_dist_weighted: 27.987, 97.84
+avg_unweighted, max_dist_unweighted: 246.81, 495.0
+avg_corr_weighted: 0.5545721069013273
+avg_corr_unweighted: 0.40710127898653486
+
+ED-15-46.csv
+num_items: 40
+num_rankings: 4
+avg_weighted, max_dist_weighted: 34.531, 129.799
+avg_unweighted, max_dist_unweighted: 351.59, 735.0
+avg_corr_weighted: 0.6029794563811026
+avg_corr_unweighted: 0.4150383495928022
+
+ED-15-47.csv
+num_items: 28
+num_rankings: 4
+avg_weighted, max_dist_weighted: 24.222, 81.961
+avg_unweighted, max_dist_unweighted: 189.0, 378.0
+avg_corr_weighted: 0.587495347752588
+avg_corr_unweighted: 0.47971781305114636
+
+ED-15-48.csv
+num_items: 10
+num_rankings: 4
+avg_weighted, max_dist_weighted: 7.026, 19.29
+avg_unweighted, max_dist_unweighted: 22.5, 45.0
+avg_corr_weighted: 0.36690628601290465
+avg_corr_unweighted: 0.3333333333333333
+
+ED-15-49.csv
+num_items: 38
+num_rankings: 4
+avg_weighted, max_dist_weighted: 33.094, 121.81
+avg_unweighted, max_dist_unweighted: 326.046, 675.0
+avg_corr_weighted: 0.567704912329365
+avg_corr_unweighted: 0.5010928928228942
+
+ED-15-5.csv
+num_items: 103
+num_rankings: 4
+avg_weighted, max_dist_weighted: 62.469, 381.484
+avg_unweighted, max_dist_unweighted: 784.244, 2625.0
+avg_corr_weighted: 0.8257550518874505
+avg_corr_unweighted: 0.042764961404711664
+
+ED-15-50.csv
+num_items: 26
+num_rankings: 4
+avg_weighted, max_dist_weighted: 21.993, 74.215
+avg_unweighted, max_dist_unweighted: 162.5, 325.0
+avg_corr_weighted: 0.3514994623539674
+avg_corr_unweighted: 0.23794871794871797
+
+ED-15-51.csv
+num_items: 77
+num_rankings: 4
+avg_weighted, max_dist_weighted: 54.056, 277.614
+avg_unweighted, max_dist_unweighted: 647.678, 1845.0
+avg_corr_weighted: 0.6145377272614353
+avg_corr_unweighted: -0.08833543666882591
+
+ED-15-52.csv
+num_items: 21
+num_rankings: 4
+avg_weighted, max_dist_weighted: 17.353, 55.553
+avg_unweighted, max_dist_unweighted: 105.0, 210.0
+avg_corr_weighted: 0.6387543672954304
+avg_corr_unweighted: 0.46349206349206357
+
+ED-15-53.csv
+num_items: 23
+num_rankings: 4
+avg_weighted, max_dist_weighted: 19.182, 62.889
+avg_unweighted, max_dist_unweighted: 126.5, 253.0
+avg_corr_weighted: 0.6239223093925228
+avg_corr_unweighted: 0.5401844532279315
+
+ED-15-54.csv
+num_items: 60
+num_rankings: 4
+avg_weighted, max_dist_weighted: 46.448, 209.699
+avg_unweighted, max_dist_unweighted: 534.506, 1335.0
+avg_corr_weighted: 0.6995312289422978
+avg_corr_unweighted: 0.10634743514175331
+
+ED-15-55.csv
+num_items: 52
+num_rankings: 4
+avg_weighted, max_dist_weighted: 42.476, 177.739
+avg_unweighted, max_dist_unweighted: 471.942, 1095.0
+avg_corr_weighted: 0.647898882919773
+avg_corr_unweighted: 0.29511609028038605
+
+ED-15-56.csv
+num_items: 44
+num_rankings: 4
+avg_weighted, max_dist_weighted: 37.114, 145.779
+avg_unweighted, max_dist_unweighted: 390.899, 855.0
+avg_corr_weighted: 0.5611500868819386
+avg_corr_unweighted: 0.2738959850669014
+
+ED-15-57.csv
+num_items: 73
+num_rankings: 4
+avg_weighted, max_dist_weighted: 52.214, 261.634
+avg_unweighted, max_dist_unweighted: 624.862, 1725.0
+avg_corr_weighted: 0.5870049981773445
+avg_corr_unweighted: -0.22484472750229934
+
+ED-15-58.csv
+num_items: 21
+num_rankings: 4
+avg_weighted, max_dist_weighted: 17.319, 55.553
+avg_unweighted, max_dist_unweighted: 105.0, 210.0
+avg_corr_weighted: 0.7105386964200019
+avg_corr_unweighted: 0.5936507936507937
+
+ED-15-59.csv
+num_items: 55
+num_rankings: 4
+avg_weighted, max_dist_weighted: 43.841, 189.724
+avg_unweighted, max_dist_unweighted: 492.61, 1185.0
+avg_corr_weighted: 0.624835408893298
+avg_corr_unweighted: 0.154853843188178
+
+ED-15-6.csv
+num_items: 103
+num_rankings: 5
+avg_weighted, max_dist_weighted: 62.862, 381.484
+avg_unweighted, max_dist_unweighted: 782.899, 2625.0
+avg_corr_weighted: 0.4885264276180673
+avg_corr_unweighted: -0.475002797370915
+
+ED-15-60.csv
+num_items: 72
+num_rankings: 4
+avg_weighted, max_dist_weighted: 51.915, 257.639
+avg_unweighted, max_dist_unweighted: 618.327, 1695.0
+avg_corr_weighted: 0.6404008829843989
+avg_corr_unweighted: -0.03130920086957271
+
+ED-15-61.csv
+num_items: 41
+num_rankings: 4
+avg_weighted, max_dist_weighted: 35.049, 133.794
+avg_unweighted, max_dist_unweighted: 361.146, 765.0
+avg_corr_weighted: 0.5256481479009735
+avg_corr_unweighted: 0.4582061917710105
+
+ED-15-62.csv
+num_items: 37
+num_rankings: 4
+avg_weighted, max_dist_weighted: 32.276, 117.815
+avg_unweighted, max_dist_unweighted: 311.787, 645.0
+avg_corr_weighted: 0.4922802611193738
+avg_corr_unweighted: 0.3665547312748767
+
+ED-15-63.csv
+num_items: 29
+num_rankings: 4
+avg_weighted, max_dist_weighted: 25.062, 85.888
+avg_unweighted, max_dist_unweighted: 203.0, 406.0
+avg_corr_weighted: 0.4767052298073893
+avg_corr_unweighted: 0.4146141215106732
+
+ED-15-64.csv
+num_items: 43
+num_rankings: 4
+avg_weighted, max_dist_weighted: 36.613, 141.784
+avg_unweighted, max_dist_unweighted: 381.474, 825.0
+avg_corr_weighted: 0.4919044320231833
+avg_corr_unweighted: 0.34901635934996006
+
+ED-15-65.csv
+num_items: 40
+num_rankings: 4
+avg_weighted, max_dist_weighted: 34.558, 129.799
+avg_unweighted, max_dist_unweighted: 348.782, 735.0
+avg_corr_weighted: 0.4059153516684824
+avg_corr_unweighted: 0.21393114705842997
+
+ED-15-66.csv
+num_items: 52
+num_rankings: 4
+avg_weighted, max_dist_weighted: 42.423, 177.739
+avg_unweighted, max_dist_unweighted: 471.995, 1095.0
+avg_corr_weighted: 0.6759840301375614
+avg_corr_unweighted: 0.3379167152194409
+
+ED-15-67.csv
+num_items: 30
+num_rankings: 4
+avg_weighted, max_dist_weighted: 25.77, 89.85
+avg_unweighted, max_dist_unweighted: 217.5, 435.0
+avg_corr_weighted: 0.6165407530070437
+avg_corr_unweighted: 0.4452107279693487
+
+ED-15-68.csv
+num_items: 32
+num_rankings: 4
+avg_weighted, max_dist_weighted: 28.058, 97.84
+avg_unweighted, max_dist_unweighted: 246.11, 495.0
+avg_corr_weighted: 0.6811274828530692
+avg_corr_unweighted: 0.5056411089892054
+
+ED-15-69.csv
+num_items: 81
+num_rankings: 4
+avg_weighted, max_dist_weighted: 55.292, 293.594
+avg_unweighted, max_dist_unweighted: 674.215, 1965.0
+avg_corr_weighted: 0.6235888377424782
+avg_corr_unweighted: -0.07752873008840287
+
+ED-15-7.csv
+num_items: 110
+num_rankings: 4
+avg_weighted, max_dist_weighted: 64.377, 409.449
+avg_unweighted, max_dist_unweighted: 817.59, 2835.0
+avg_corr_weighted: 0.6949450468522332
+avg_corr_unweighted: -0.29728763529721525
+
+ED-15-70.csv
+num_items: 67
+num_rankings: 4
+avg_weighted, max_dist_weighted: 49.844, 237.664
+avg_unweighted, max_dist_unweighted: 585.538, 1545.0
+avg_corr_weighted: 0.635882684441016
+avg_corr_unweighted: 0.04702153248798849
+
+ED-15-71.csv
+num_items: 17
+num_rankings: 4
+avg_weighted, max_dist_weighted: 13.544, 41.472
+avg_unweighted, max_dist_unweighted: 68.0, 136.0
+avg_corr_weighted: 0.5388986662797944
+avg_corr_unweighted: 0.3774509803921569
+
+ED-15-72.csv
+num_items: 17
+num_rankings: 4
+avg_weighted, max_dist_weighted: 13.334, 41.472
+avg_unweighted, max_dist_unweighted: 68.0, 136.0
+avg_corr_weighted: 0.5342008658530333
+avg_corr_unweighted: 0.5563725490196078
+
+ED-15-73.csv
+num_items: 36
+num_rankings: 4
+avg_weighted, max_dist_weighted: 31.083, 113.82
+avg_unweighted, max_dist_unweighted: 301.07, 615.0
+avg_corr_weighted: 0.5643027286043876
+avg_corr_unweighted: 0.3622745540904108
+
+ED-15-74.csv
+num_items: 20
+num_rankings: 4
+avg_weighted, max_dist_weighted: 16.411, 51.955
+avg_unweighted, max_dist_unweighted: 95.0, 190.0
+avg_corr_weighted: 0.5763450516871873
+avg_corr_unweighted: 0.512280701754386
+
+ED-15-75.csv
+num_items: 42
+num_rankings: 4
+avg_weighted, max_dist_weighted: 35.933, 137.789
+avg_unweighted, max_dist_unweighted: 371.174, 795.0
+avg_corr_weighted: 0.633949091450153
+avg_corr_unweighted: 0.4077350963878576
+
+ED-15-76.csv
+num_items: 44
+num_rankings: 4
+avg_weighted, max_dist_weighted: 37.127, 145.779
+avg_unweighted, max_dist_unweighted: 394.72, 855.0
+avg_corr_weighted: 0.5881938663002904
+avg_corr_unweighted: 0.4700885015538441
+
+ED-15-77.csv
+num_items: 56
+num_rankings: 4
+avg_weighted, max_dist_weighted: 44.341, 193.719
+avg_unweighted, max_dist_unweighted: 503.317, 1215.0
+avg_corr_weighted: 0.4851162053587256
+avg_corr_unweighted: 0.05088126783038705
+
+ED-15-78.csv
+num_items: 12
+num_rankings: 4
+avg_weighted, max_dist_weighted: 8.987, 25.239
+avg_unweighted, max_dist_unweighted: 33.0, 66.0
+avg_corr_weighted: 0.6359714285607242
+avg_corr_unweighted: 0.4797979797979797
+
+ED-15-79.csv
+num_items: 41
+num_rankings: 4
+avg_weighted, max_dist_weighted: 35.162, 133.794
+avg_unweighted, max_dist_unweighted: 360.14, 765.0
+avg_corr_weighted: 0.5775880484148318
+avg_corr_unweighted: 0.35210381148072045
+
+ED-15-8.csv
+num_items: 99
+num_rankings: 4
+avg_weighted, max_dist_weighted: 61.831, 365.504
+avg_unweighted, max_dist_unweighted: 765.326, 2505.0
+avg_corr_weighted: 0.561560818080688
+avg_corr_unweighted: -0.5139894026122137
+
+ED-15-9.csv
+num_items: 115
+num_rankings: 4
+avg_weighted, max_dist_weighted: 65.941, 429.424
+avg_unweighted, max_dist_unweighted: 836.53, 2985.0
+avg_corr_weighted: 0.6575895069016472
+avg_corr_unweighted: -0.3931980856606528
+

@@ -108,6 +108,6 @@ class Harmonic(Weight):
             for l in range(j+1, j + delt + 1):
                 s += 1.0/l
         else:
-            for l in range(j+1, np.min(j + delt + 1, self.cutoff)):
+            for l in range(j+1, min(j + delt + 1, self.cutoff)):
                 s += 1.0/l
         return s

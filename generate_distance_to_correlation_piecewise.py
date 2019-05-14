@@ -23,22 +23,25 @@ def read_cmd_args():
         sys.exit(0)
     return num_items, weight_type, b
 
-def compute_avg_and_max(num_items, weight_type, b=0.0):
+def compute_avg_and_max(num_items, weight_type, b=0.0, cutoff=None):
     weight_obj = None
     if weight_type == "Unweighted":
-        max_dist = comb(num_items, 2)
-        avg = max_dist / 2
-        return avg, max_dist
+        if cutoff is not None:
+            weight_obj = Unweighted(a=1.0, b=b, cutoff=cutoff)
+        else:
+            max_dist = comb(num_items, 2)
+            avg = max_dist / 2
+            return avg, max_dist
     elif weight_type == "Arithmetic":
-        weight_obj = Arithmetic(a=1.0, b=b)
+        weight_obj = Arithmetic(a=1.0, b=b, cutoff=cutoff)
     elif weight_type == "Geometric":
-        weight_obj = Geometric(a=1.0, b=b)
+        weight_obj = Geometric(a=1.0, b=b, cutoff=cutoff)
     elif weight_type == "Harmonic":
-        weight_obj = Harmonic(a=1.0, b=b)
+        weight_obj = Harmonic(a=1.0, b=b, cutoff=cutoff)
     rank_obj_1 = Ranking(num_items, weight_obj, rank=np.array([i for i in range(1, num_items+1)]))
     rank_obj_2 = Ranking(num_items, weight_obj, rank=np.array([i for i in range(num_items, 0, -1)]))
     max_dist = round(rank_obj_1.calc_dist(rank_obj_2), 3)
-    num_trials = 500
+    num_trials = 1000
     dists = np.empty((num_trials))
     for i in range(num_trials):
         rank_obj_1.shuffle_ranking()
@@ -54,11 +57,13 @@ def compute_correlation_from_dist(dist, avg, max_dist):
         return -1*(dist-avg)/(max_dist-avg)
 
 def main():
-    with open("output/preflib/web_search_correlations_harmonic.log", 'w') as f:
+    with open("output/preflib/web_search_correlations_harmonic_cutoff_30.log", 'w') as f:
         weight_type = "Harmonic"
         b = 0.0
+        cutoff = 30
         f.write('weight_type: ' + weight_type + "\n")
-        f.write('b: ' + str(b) + "\n\n")
+        f.write('b: ' + str(b) + "\n")
+        f.write('cutoff: ' + str(cutoff) + "\n\n")
         for file_name in os.listdir("data/preflib/web_search"):
             print(file_name)
             f.write(file_name + "\n")
@@ -67,8 +72,8 @@ def main():
             num_items = np.shape(data)[1]
             f.write("num_items: " + str(num_items) + "\n")
             f.write("num_rankings: " + str(num_rankings) + "\n")
-            avg_weighted, max_dist_weighted = compute_avg_and_max(num_items, weight_type, b=b)
-            avg_unweighted, max_dist_unweighted = compute_avg_and_max(num_items, "Unweighted", b=0.0)
+            avg_weighted, max_dist_weighted = compute_avg_and_max(num_items, weight_type, b=b, cutoff=(cutoff if cutoff is not None and cutoff<num_items else None))
+            avg_unweighted, max_dist_unweighted = compute_avg_and_max(num_items, "Unweighted", b=0.0, cutoff=(cutoff if cutoff is not None and cutoff<num_items else None))
             f.write("avg_weighted, max_dist_weighted: " + str(avg_weighted) + ", " + str(max_dist_weighted) + "\n")
             f.write("avg_unweighted, max_dist_unweighted: " + str(avg_unweighted) + ", " + str(max_dist_unweighted) + "\n")
 
@@ -77,8 +82,8 @@ def main():
             corrs_unweighted = []
             for i in range(num_rankings):
                 for j in range(i+1, num_rankings):
-                    rank_obj_1 = Ranking(num_items, Harmonic(a=1.0, b=b), rank=data[i])
-                    rank_obj_2 = Ranking(num_items, Harmonic(a=1.0, b=b), rank=data[j])
+                    rank_obj_1 = Ranking(num_items, Harmonic(a=1.0, b=b, cutoff=cutoff), rank=data[i])
+                    rank_obj_2 = Ranking(num_items, Harmonic(a=1.0, b=b, cutoff=cutoff), rank=data[j])
                     corrs_weighted.append(compute_correlation_from_dist(rank_obj_1.calc_dist(rank_obj_2), avg_weighted, max_dist_weighted))
                     rank_obj_3 = Ranking(num_items, Unweighted(a=1.0, b=0.0), rank=data[i])
                     rank_obj_4 = Ranking(num_items, Unweighted(a=1.0, b=0.0), rank=data[j])
