@@ -2,7 +2,7 @@ import os
 import sys
 import random
 import numpy as np
-from rankobjects.Weight import Arithmetic, Geometric, Harmonic
+from rankobjects.Weight import Unweighted, Arithmetic, Geometric, Harmonic
 from rankobjects.Ranking import Ranking
 
 # Read in the data from given file
@@ -22,12 +22,16 @@ def read_cmd_args():
         sys.exit(0)
     return num_items, weight_type, b
 
-def compute_avg_and_max(num_items, weight_type, b):
+def compute_avg_and_max(num_items, weight_type, b=0.0):
     weight_obj = None
-    if weight_type == "Arithmetic":
+    if weight_type == "Unweighted":
+        weight_obj = Unweighted(a=1.0, b=b)
+    elif weight_type == "Arithmetic":
         weight_obj = Arithmetic(a=1.0, b=b)
-    else:
+    elif weight_type == "Geometric":
         weight_obj = Geometric(a=1.0, b=b)
+    elif weight_type == "Harmonic":
+        weight_obj = Harmonic(a=1.0, b=b)
     rank_obj_1 = Ranking(num_items, weight_obj, rank=np.array([i for i in range(1, num_items+1)]))
     rank_obj_2 = Ranking(num_items, weight_obj, rank=np.array([i for i in range(num_items, 0, -1)]))
     max_dist = round(rank_obj_1.calc_dist(rank_obj_2), 3)
@@ -49,7 +53,7 @@ def compute_correlation_from_dist(dist, avg, max_dist):
 def main():
     with open("output/preflib/web_search_correlations_harmonic.log", 'w') as f:
         weight_type = "Harmonic"
-        b = 0.9
+        b = 0.0
         f.write('weight_type: ' + weight_type + "\n")
         f.write('b: ' + str(b) + "\n\n")
         for file_name in os.listdir("data/preflib/web_search"):
@@ -61,7 +65,7 @@ def main():
             f.write("num_items: " + str(num_items) + "\n")
             f.write("num_rankings: " + str(num_rankings) + "\n")
             avg_weighted, max_dist_weighted = compute_avg_and_max(num_items, weight_type, b=b)
-            avg_unweighted, max_dist_unweighted = compute_avg_and_max(num_items, "Arithmetic", b=0.0) # unweighted -> Arithmetic = Geometric
+            avg_unweighted, max_dist_unweighted = compute_avg_and_max(num_items, "Unweighted", b=0.0)
             f.write("avg_weighted, max_dist_weighted: " + str(avg_weighted) + ", " + str(max_dist_weighted) + "\n")
             f.write("avg_unweighted, max_dist_unweighted: " + str(avg_unweighted) + ", " + str(max_dist_unweighted) + "\n")
 
@@ -70,11 +74,11 @@ def main():
             corrs_unweighted = []
             for i in range(num_rankings):
                 for j in range(i+1, num_rankings):
-                    rank_obj_1 = Ranking(num_items, Geometric(a=1.0, b=b), rank=data[i])
-                    rank_obj_2 = Ranking(num_items, Geometric(a=1.0, b=b), rank=data[j])
+                    rank_obj_1 = Ranking(num_items, Harmonic(a=1.0, b=b), rank=data[i])
+                    rank_obj_2 = Ranking(num_items, Harmonic(a=1.0, b=b), rank=data[j])
                     corrs_weighted.append(compute_correlation_from_dist(rank_obj_1.calc_dist(rank_obj_2), avg_weighted, max_dist_weighted))
-                    rank_obj_3 = Ranking(num_items, Arithmetic(a=1.0, b=0.0), rank=data[i]) # unweighted -> Arithmetic = Geometric
-                    rank_obj_4 = Ranking(num_items, Arithmetic(a=1.0, b=0.0), rank=data[j])
+                    rank_obj_3 = Ranking(num_items, Unweighted(a=1.0, b=0.0), rank=data[i])
+                    rank_obj_4 = Ranking(num_items, Unweighted(a=1.0, b=0.0), rank=data[j])
                     corrs_unweighted.append(compute_correlation_from_dist(rank_obj_3.calc_dist(rank_obj_4), avg_unweighted, max_dist_unweighted))
             avg_corr_weighted = sum(corrs_weighted)/len(corrs_weighted)
             avg_corr_unweighted = sum(corrs_unweighted)/len(corrs_unweighted)
