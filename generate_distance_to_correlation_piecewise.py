@@ -2,6 +2,7 @@ import os
 import sys
 import random
 import numpy as np
+from scipy.special import comb
 from rankobjects.Weight import Unweighted, Arithmetic, Geometric, Harmonic
 from rankobjects.Ranking import Ranking
 
@@ -25,7 +26,9 @@ def read_cmd_args():
 def compute_avg_and_max(num_items, weight_type, b=0.0):
     weight_obj = None
     if weight_type == "Unweighted":
-        weight_obj = Unweighted(a=1.0, b=b)
+        max_dist = comb(num_items, 2)
+        avg = max_dist / 2
+        return avg, max_dist
     elif weight_type == "Arithmetic":
         weight_obj = Arithmetic(a=1.0, b=b)
     elif weight_type == "Geometric":
@@ -35,7 +38,7 @@ def compute_avg_and_max(num_items, weight_type, b=0.0):
     rank_obj_1 = Ranking(num_items, weight_obj, rank=np.array([i for i in range(1, num_items+1)]))
     rank_obj_2 = Ranking(num_items, weight_obj, rank=np.array([i for i in range(num_items, 0, -1)]))
     max_dist = round(rank_obj_1.calc_dist(rank_obj_2), 3)
-    num_trials = 1000
+    num_trials = 500
     dists = np.empty((num_trials))
     for i in range(num_trials):
         rank_obj_1.shuffle_ranking()

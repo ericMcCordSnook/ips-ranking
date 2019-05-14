@@ -35,10 +35,11 @@ class Unweighted(Weight):
         return weights
 
     def calc_weight_sum(self, j, delt):
-        if j > self.cutoff:
-            return 0.0
-        elif j + delt - 1 >= self.cutoff:
-            delt = self.cutoff - j
+        if self.cutoff is not None:
+            if j > self.cutoff:
+                return 0.0
+            elif j + delt - 1 >= self.cutoff:
+                delt = self.cutoff - j
         return delt
 
 # Arithmetic weights are a Weight in which weights are determined arithmetically
@@ -57,10 +58,11 @@ class Arithmetic(Weight):
         return weights
 
     def calc_weight_sum(self, j, delt):
-        if j >= self.cutoff:
-            return 0.0
-        elif j + delt - 1 >= self.cutoff:
-            delt = self.cutoff - j
+        if self.cutoff is not None:
+            if j >= self.cutoff:
+                return 0.0
+            elif j + delt - 1 >= self.cutoff:
+                delt = self.cutoff - j
         return self.a*delt - self.b*delt*(j-0.5) - 0.5*self.b*delt*delt
 
 
@@ -79,10 +81,11 @@ class Geometric(Weight):
         return weights
 
     def calc_weight_sum(self, j, delt):
-        if j >= self.cutoff:
-            return 0.0
-        elif j + delt - 1 >= self.cutoff:
-            delt = self.cutoff - j
+        if self.cutoff is not None:
+            if j >= self.cutoff:
+                return 0.0
+            elif j + delt - 1 >= self.cutoff:
+                delt = self.cutoff - j
         return (self.a*(self.b ** j)*(1 - (self.b ** delt))) / (1-self.b)
 
 
